@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.tue_tds;
 
 /**
@@ -11,11 +7,27 @@ package com.mycompany.tue_tds;
 
 public class Main {
     
+    static Game frame = new Game();
+    static Enemies enemy = new Enemies();
+    
+    private static void update() {
+        enemy.update();
+    }
+    
+    private static void draw() {
+        enemy.draw(frame);
+    }
+    
+    private static void run() {
+        while (true) {
+            update();
+            draw();
+        }
+    }
+    
     public static void main(String[] args) {
-        
-        Game game = new Game();
-        game.setLocationRelativeTo(null);
-        game.setVisible(true);
-        
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+        run();
     }
 }

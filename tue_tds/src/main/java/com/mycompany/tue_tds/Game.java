@@ -141,7 +141,6 @@ public class Game extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CS Tower Defense");
-        setPreferredSize(new java.awt.Dimension(704, 732));
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(11, 11));
 
@@ -162,7 +161,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row1);
 
-        row2.setBackground(new java.awt.Color(255, 255, 0));
+        row2.setBackground(new java.awt.Color(0, 0, 0));
         row2.setMaximumSize(new java.awt.Dimension(32767, 64));
         row2.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -397,7 +396,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row2);
 
-        row3.setBackground(new java.awt.Color(255, 255, 0));
+        row3.setBackground(new java.awt.Color(0, 0, 0));
         row3.setMaximumSize(new java.awt.Dimension(32767, 64));
         row3.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -632,7 +631,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row3);
 
-        row4.setBackground(new java.awt.Color(255, 255, 0));
+        row4.setBackground(new java.awt.Color(0, 0, 0));
         row4.setMaximumSize(new java.awt.Dimension(32767, 64));
         row4.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -867,7 +866,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row4);
 
-        row5.setBackground(new java.awt.Color(255, 255, 0));
+        row5.setBackground(new java.awt.Color(0, 0, 0));
         row5.setMaximumSize(new java.awt.Dimension(32767, 64));
         row5.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -1102,7 +1101,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row5);
 
-        row6.setBackground(new java.awt.Color(255, 255, 0));
+        row6.setBackground(new java.awt.Color(0, 0, 0));
         row6.setMaximumSize(new java.awt.Dimension(32767, 64));
         row6.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -1337,7 +1336,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row6);
 
-        row7.setBackground(new java.awt.Color(255, 255, 0));
+        row7.setBackground(new java.awt.Color(0, 0, 0));
         row7.setMaximumSize(new java.awt.Dimension(32767, 64));
         row7.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -1572,7 +1571,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row7);
 
-        row8.setBackground(new java.awt.Color(255, 255, 0));
+        row8.setBackground(new java.awt.Color(0, 0, 0));
         row8.setMaximumSize(new java.awt.Dimension(32767, 64));
         row8.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -1807,7 +1806,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row8);
 
-        row9.setBackground(new java.awt.Color(255, 255, 0));
+        row9.setBackground(new java.awt.Color(0, 0, 0));
         row9.setMaximumSize(new java.awt.Dimension(32767, 64));
         row9.setPreferredSize(new java.awt.Dimension(704, 64));
 
@@ -2042,7 +2041,7 @@ public class Game extends javax.swing.JFrame {
 
         getContentPane().add(row9);
 
-        row10.setBackground(new java.awt.Color(255, 255, 0));
+        row10.setBackground(new java.awt.Color(0, 0, 0));
         row10.setMaximumSize(new java.awt.Dimension(32767, 64));
         row10.setPreferredSize(new java.awt.Dimension(704, 64));
 

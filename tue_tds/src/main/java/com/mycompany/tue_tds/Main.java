@@ -10,15 +10,15 @@ public class Main {
     static Game frame = new Game();
     static Enemies enemy = new Enemies();
     
-    private static void update() {
+    static void update() {
         enemy.update();
     }
     
-    private static void draw() {
+    static void draw() {
         enemy.draw(frame);
     }
     
-    private static void run() {
+    static void run() {
         while (true) {
             update();
             draw();

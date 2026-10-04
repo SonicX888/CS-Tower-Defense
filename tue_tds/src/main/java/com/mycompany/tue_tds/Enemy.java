@@ -15,8 +15,8 @@ public class Enemy {
     int speed;
     int money;
     int type;
-    int count_bullet; 
-    boolean bullet_touched;
+    int countBullet; 
+    boolean bulletTouched;
     JLabel sprite;
     
     public Enemy(
@@ -36,8 +36,8 @@ public class Enemy {
         this.speed = speed;
         this.money = money;
         this.type = type;
-        this.count_bullet = countBullet; 
-        this.bullet_touched = bulletTouched;
+        this.countBullet = countBullet; 
+        this.bulletTouched = bulletTouched;
         
     }
     

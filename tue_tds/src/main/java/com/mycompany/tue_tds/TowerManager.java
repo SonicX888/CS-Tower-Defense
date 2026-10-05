@@ -4,12 +4,16 @@ package com.mycompany.tue_tds;
  *
  * @author kyllianlim
  */
-public class Towers {
+public class TowerManager extends GameManager {
+    
+    @Override
     void update() {
         
     }
     
-    void draw(){
+    @Override
+    void draw(Game frame){
         
     }
+    
 }

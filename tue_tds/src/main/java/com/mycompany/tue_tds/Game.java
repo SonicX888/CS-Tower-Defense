@@ -4,6 +4,9 @@
  */
 package com.mycompany.tue_tds;
 
+import com.mycompany.tue_tds.inputs.KeyboardInputs;
+import com.mycompany.tue_tds.inputs.MouseInputs;
+
 /**
  *
  * @author kyllianlim
@@ -11,7 +14,21 @@ package com.mycompany.tue_tds;
 public class Game extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Game.class.getName());
-
+    
+    private KeyboardInputs keyboardInputs;
+    private MouseInputs mouseInputs;
+    //gets user input
+    public void initInputs(){
+        keyboardInputs = new KeyboardInputs();
+        mouseInputs = new MouseInputs();
+        
+        addMouseListener(mouseInputs);
+        addMouseMotionListener(mouseInputs);
+        addKeyListener(keyboardInputs);
+        
+        requestFocus();
+    }
+    
     /**
      * Creates new form Test
      */

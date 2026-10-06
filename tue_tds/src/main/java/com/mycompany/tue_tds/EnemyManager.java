@@ -24,7 +24,7 @@ public class EnemyManager extends GameManager {
             Enemy enemy = new Enemy(0, 64 * (cell + 1), 2, 4, 2, 1, 0, false);
             enemiesArray.add(enemy);
             enemy.sprite = new JLabel(new ImageIcon(EnemyManager.class.getResource(
-                    "/assets/grass_block_64x64.png"
+                    "/assets/grass_block.png"
             )));
             enemy.sprite.setSize(enemy.sprite.getPreferredSize());
         }
@@ -40,8 +40,8 @@ public class EnemyManager extends GameManager {
         for (Enemy e : enemiesArray) {
             if (e.sprite.getParent() == null) {
                 frame.getLayeredPane().add(e.sprite, Integer.valueOf(1));
+                e.sprite.setLocation(e.x, e.y);
             }
-            e.sprite.setLocation(e.x, e.y);
         }
     }
 }

@@ -24,16 +24,6 @@ public class TowerManager extends GameManager {
         
     }
     
-    @Override
-    void update() {
-        
-    }
-    
-    @Override
-    void draw(Game frame){
-        
-    }
-    
     //Set location of the tower(only for testing)
     private void initTower(){
         tower = new Tower(3 * 64, 64, 0, 0);
@@ -53,6 +43,16 @@ public class TowerManager extends GameManager {
     // Draws the tower
     public void drawTower(Graphics g){
         g.drawImage(towerImages[0], 0, 0, null);
+    }
+    
+    @Override
+    void update() {
+        
+    }
+    
+    @Override
+    void draw(Game frame){
+        
     }
         
 }

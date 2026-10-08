@@ -1,5 +1,7 @@
 package com.mycompany.tue_tds;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author kyllianlim
@@ -10,6 +12,13 @@ public class Tower {
     int y;
     int id;
     int towerType;
+    JLabel sprite;
+    
+    public static class TowerTypes{
+        public static final int TOWER_A = 0;
+        public static final int TOWER_B = 1;
+        public static final int TOWER_C = 2;
+    }
     
     public Tower(int x, int y, int id, int towerType){
         this.x = x;

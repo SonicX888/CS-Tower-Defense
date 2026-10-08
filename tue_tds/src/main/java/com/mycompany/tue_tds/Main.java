@@ -36,6 +36,7 @@ public class Main {
     public static void main(String[] args) {
         frame.setLocationRelativeTo(null);
         frame.initInputs();
+        frame.initInputs(); 
         frame.setVisible(true);
         managers.add(enemies);
         managers.add(towers);

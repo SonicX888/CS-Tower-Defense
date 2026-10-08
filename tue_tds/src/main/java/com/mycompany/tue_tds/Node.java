@@ -5,17 +5,31 @@ package com.mycompany.tue_tds;
  * @author kyllianlim
  */
 public class Node {
+    int id;
+    int parentId;
     int x;
     int y;
+    float heuristicCost;
+    float pastCost;
+    float finalCost;
     boolean isTower;
-    int[] parent;
-    float finalValue;
     
-    public Node(int x, int y, boolean isTower, int[] parent, float finalValue) {
+    public Node(
+            int id, 
+            int parentId, 
+            int x, 
+            int y, 
+            float heuristicCost, 
+            float pastCost, 
+            boolean isTower
+    ) {
+        this.id = id;
+        this.parentId = parentId;
         this.x = x;
         this.y = y;
+        this.heuristicCost = heuristicCost;
+        this.pastCost = pastCost;
         this.isTower = isTower;
-        this.parent = parent;
-        this.finalValue = finalValue;
+        this.finalCost = pastCost + heuristicCost;
     }
 }

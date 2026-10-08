@@ -40,8 +40,8 @@ public class EnemyManager extends GameManager {
         for (Enemy e : enemiesArray) {
             if (e.sprite.getParent() == null) {
                 frame.getLayeredPane().add(e.sprite, Integer.valueOf(1));
-                e.sprite.setLocation(e.x, e.y);
             }
+            e.sprite.setLocation(e.x, e.y);
         }
     }
 }

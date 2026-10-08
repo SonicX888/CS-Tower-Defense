@@ -17,7 +17,7 @@ public class PriorityQueue {
         
         Link l = new Link(input, null);
 
-        if (head == null || input.finalValue < head.value.finalValue) {
+        if (head == null || input.finalCost < head.value.finalCost) {
             l.next = head;
             head = l;
             if (end == null) {
@@ -28,7 +28,7 @@ public class PriorityQueue {
         
         Link current = head;
         
-        while (current.next != null && current.next.value.finalValue <= input.finalValue) {
+        while (current.next != null && current.next.value.finalCost <= input.finalCost) {
             current = current.next;
         }
         l.next = current.next;

@@ -14,7 +14,7 @@ public class TowerManager extends GameManager {
     
     ArrayList<Tower> towerList = new ArrayList<Tower>();
     private Tower tower;
-    
+    /**
     //Set location of the tower(only for testing)
     private void initTower(){
     private void buildTower(){
@@ -39,23 +39,25 @@ public class TowerManager extends GameManager {
         tower.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/assets/towerDefense_tile291.png")));
         tower.sprite.setSize(tower.sprite.getPreferredSize());
     }
-    
+    **/
 
     @Override
     void update() {
         
-        buildTower();
+        // buildTower();
     }
     
     @Override
     void draw(Game frame){
         
+        /**
         for (Tower i: towerList){
             if (i.sprite.getParent() == null){
                 frame.getLayeredPane().add(i.sprite, Integer.valueOf(1));
             }
             i.sprite.setLocation(i.x, i.y);
         }
+        **/
     }
         
 }

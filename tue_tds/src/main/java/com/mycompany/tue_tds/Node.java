@@ -1,35 +1,32 @@
 package com.mycompany.tue_tds;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  *
  * @author kyllianlim
  */
 public class Node {
     int id;
-    int parentId;
     int x;
     int y;
-    float heuristicCost;
-    float pastCost;
-    float finalCost;
+    double heuristicCost;
+    HashMap<Integer, Double> finalCost = new HashMap<>();
+    ArrayList<Node> neighbors;
     boolean isTower;
     
     public Node(
             int id, 
-            int parentId, 
             int x, 
             int y, 
-            float heuristicCost, 
-            float pastCost, 
+            double heuristicCost, 
             boolean isTower
     ) {
         this.id = id;
-        this.parentId = parentId;
         this.x = x;
         this.y = y;
         this.heuristicCost = heuristicCost;
-        this.pastCost = pastCost;
         this.isTower = isTower;
-        this.finalCost = pastCost + heuristicCost;
     }
 }

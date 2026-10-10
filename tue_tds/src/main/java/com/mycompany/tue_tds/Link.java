@@ -6,10 +6,10 @@ package com.mycompany.tue_tds;
  */
 public class Link {
     
-    Node value;
+    Node[] value;
     Link next;
     
-    public Link(Node input1, Link input2) {
+    public Link(Node[] input1, Link input2) {
         
         this.value = input1;
         this.next = input2;

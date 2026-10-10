@@ -16,7 +16,7 @@ public class Main {
     static ArrayList<GameManager> managers = new ArrayList<GameManager>();
     static EnemyManager enemies = new EnemyManager();
     static TowerManager towers = new TowerManager();
-            
+    
     static void run() {
         Timer timer = new Timer(16, new ActionListener() {
             @Override
@@ -40,6 +40,7 @@ public class Main {
         frame.setVisible(true);
         managers.add(enemies);
         managers.add(towers);
+        Astar.gridCreation();
         run();
         
     }

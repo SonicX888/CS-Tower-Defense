@@ -13,11 +13,13 @@ public class PriorityQueue {
         return head == null;
     }
     
-    void enqueue(Node input) {
+    void enqueue(Node input, int parentId) {
         
-        Link l = new Link(input, null);
+        Node[] nodeArray = {input, Astar.grid[parentId / Astar.grid[0].length][parentId % Astar.grid[0].length]};
+        
+        Link l = new Link(nodeArray, null);
 
-        if (head == null || input.finalCost < head.value.finalCost) {
+        if (head == null || input.finalCost.get(parentId) < head.value[0].finalCost.get(parentId)) {
             l.next = head;
             head = l;
             if (end == null) {
@@ -28,7 +30,7 @@ public class PriorityQueue {
         
         Link current = head;
         
-        while (current.next != null && current.next.value.finalCost <= input.finalCost) {
+        while (current.next != null && current.next.value[0].finalCost.get(parentId) <= input.finalCost.get(parentId)) {
             current = current.next;
         }
         l.next = current.next;
@@ -38,11 +40,11 @@ public class PriorityQueue {
         }
     }
         
-    Node dequeue() {
+    Node[] dequeue() {
         if (isEmpty()) {
             throw new NullPointerException("Queue is empty");
         } else {
-            Node output = head.value;
+            Node[] output = head.value;
             head = head.next;
             if (head == null) {
                 end = null;

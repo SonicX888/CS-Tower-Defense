@@ -13,11 +13,13 @@ import java.awt.Graphics;
 public class GamePanel extends javax.swing.JPanel {
     
     private TowerManager towerManager;
-
+    
     @Override
     protected void paintComponent(Graphics g) {
+        /**
         super.paintComponent(g); 
         towerManager.drawTower(g);
+        **/
     }
     
 }

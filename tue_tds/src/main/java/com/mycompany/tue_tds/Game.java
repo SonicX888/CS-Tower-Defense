@@ -186,7 +186,6 @@ public class Game extends javax.swing.JFrame {
         cell12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell12.setForeground(new java.awt.Color(0, 0, 0));
         cell12.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell12.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell12Layout = new javax.swing.GroupLayout(cell12);
         cell12.setLayout(cell12Layout);
@@ -203,7 +202,6 @@ public class Game extends javax.swing.JFrame {
         cell13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell13.setForeground(new java.awt.Color(0, 0, 0));
         cell13.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell13.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell13Layout = new javax.swing.GroupLayout(cell13);
         cell13.setLayout(cell13Layout);
@@ -220,7 +218,6 @@ public class Game extends javax.swing.JFrame {
         cell14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell14.setForeground(new java.awt.Color(0, 0, 0));
         cell14.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell14.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell14Layout = new javax.swing.GroupLayout(cell14);
         cell14.setLayout(cell14Layout);
@@ -237,7 +234,6 @@ public class Game extends javax.swing.JFrame {
         cell15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell15.setForeground(new java.awt.Color(0, 0, 0));
         cell15.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell15.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell15Layout = new javax.swing.GroupLayout(cell15);
         cell15.setLayout(cell15Layout);
@@ -254,7 +250,6 @@ public class Game extends javax.swing.JFrame {
         cell16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell16.setForeground(new java.awt.Color(0, 0, 0));
         cell16.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell16.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell16Layout = new javax.swing.GroupLayout(cell16);
         cell16.setLayout(cell16Layout);
@@ -271,7 +266,6 @@ public class Game extends javax.swing.JFrame {
         cell17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell17.setForeground(new java.awt.Color(0, 0, 0));
         cell17.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell17.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell17Layout = new javax.swing.GroupLayout(cell17);
         cell17.setLayout(cell17Layout);
@@ -288,7 +282,6 @@ public class Game extends javax.swing.JFrame {
         cell18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell18.setForeground(new java.awt.Color(0, 0, 0));
         cell18.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell18.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell18Layout = new javax.swing.GroupLayout(cell18);
         cell18.setLayout(cell18Layout);
@@ -305,7 +298,6 @@ public class Game extends javax.swing.JFrame {
         cell19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell19.setForeground(new java.awt.Color(0, 0, 0));
         cell19.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell19.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell19Layout = new javax.swing.GroupLayout(cell19);
         cell19.setLayout(cell19Layout);
@@ -322,7 +314,6 @@ public class Game extends javax.swing.JFrame {
         cell20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell20.setForeground(new java.awt.Color(0, 0, 0));
         cell20.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell20.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell20Layout = new javax.swing.GroupLayout(cell20);
         cell20.setLayout(cell20Layout);
@@ -339,7 +330,6 @@ public class Game extends javax.swing.JFrame {
         cell21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell21.setForeground(new java.awt.Color(0, 0, 0));
         cell21.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell21.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell21Layout = new javax.swing.GroupLayout(cell21);
         cell21.setLayout(cell21Layout);
@@ -356,7 +346,6 @@ public class Game extends javax.swing.JFrame {
         cell22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell22.setForeground(new java.awt.Color(0, 0, 0));
         cell22.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell22.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell22Layout = new javax.swing.GroupLayout(cell22);
         cell22.setLayout(cell22Layout);
@@ -421,7 +410,6 @@ public class Game extends javax.swing.JFrame {
         cell23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell23.setForeground(new java.awt.Color(0, 0, 0));
         cell23.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell23.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell23Layout = new javax.swing.GroupLayout(cell23);
         cell23.setLayout(cell23Layout);
@@ -438,7 +426,6 @@ public class Game extends javax.swing.JFrame {
         cell24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell24.setForeground(new java.awt.Color(0, 0, 0));
         cell24.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell24.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell24Layout = new javax.swing.GroupLayout(cell24);
         cell24.setLayout(cell24Layout);
@@ -455,7 +442,6 @@ public class Game extends javax.swing.JFrame {
         cell25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell25.setForeground(new java.awt.Color(0, 0, 0));
         cell25.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell25.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell25Layout = new javax.swing.GroupLayout(cell25);
         cell25.setLayout(cell25Layout);
@@ -472,7 +458,6 @@ public class Game extends javax.swing.JFrame {
         cell26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell26.setForeground(new java.awt.Color(0, 0, 0));
         cell26.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell26.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell26Layout = new javax.swing.GroupLayout(cell26);
         cell26.setLayout(cell26Layout);
@@ -489,7 +474,6 @@ public class Game extends javax.swing.JFrame {
         cell27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell27.setForeground(new java.awt.Color(0, 0, 0));
         cell27.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell27.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell27Layout = new javax.swing.GroupLayout(cell27);
         cell27.setLayout(cell27Layout);
@@ -506,7 +490,6 @@ public class Game extends javax.swing.JFrame {
         cell28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell28.setForeground(new java.awt.Color(0, 0, 0));
         cell28.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell28.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell28Layout = new javax.swing.GroupLayout(cell28);
         cell28.setLayout(cell28Layout);
@@ -523,7 +506,6 @@ public class Game extends javax.swing.JFrame {
         cell29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell29.setForeground(new java.awt.Color(0, 0, 0));
         cell29.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell29.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell29Layout = new javax.swing.GroupLayout(cell29);
         cell29.setLayout(cell29Layout);
@@ -540,7 +522,6 @@ public class Game extends javax.swing.JFrame {
         cell30.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell30.setForeground(new java.awt.Color(0, 0, 0));
         cell30.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell30.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell30Layout = new javax.swing.GroupLayout(cell30);
         cell30.setLayout(cell30Layout);
@@ -557,7 +538,6 @@ public class Game extends javax.swing.JFrame {
         cell31.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell31.setForeground(new java.awt.Color(0, 0, 0));
         cell31.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell31.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell31Layout = new javax.swing.GroupLayout(cell31);
         cell31.setLayout(cell31Layout);
@@ -574,7 +554,6 @@ public class Game extends javax.swing.JFrame {
         cell32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell32.setForeground(new java.awt.Color(0, 0, 0));
         cell32.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell32.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell32Layout = new javax.swing.GroupLayout(cell32);
         cell32.setLayout(cell32Layout);
@@ -591,7 +570,6 @@ public class Game extends javax.swing.JFrame {
         cell33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell33.setForeground(new java.awt.Color(0, 0, 0));
         cell33.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell33.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell33Layout = new javax.swing.GroupLayout(cell33);
         cell33.setLayout(cell33Layout);
@@ -656,7 +634,6 @@ public class Game extends javax.swing.JFrame {
         cell34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell34.setForeground(new java.awt.Color(0, 0, 0));
         cell34.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell34.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell34Layout = new javax.swing.GroupLayout(cell34);
         cell34.setLayout(cell34Layout);
@@ -673,7 +650,6 @@ public class Game extends javax.swing.JFrame {
         cell35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell35.setForeground(new java.awt.Color(0, 0, 0));
         cell35.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell35.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell35Layout = new javax.swing.GroupLayout(cell35);
         cell35.setLayout(cell35Layout);
@@ -690,7 +666,6 @@ public class Game extends javax.swing.JFrame {
         cell36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell36.setForeground(new java.awt.Color(0, 0, 0));
         cell36.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell36.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell36Layout = new javax.swing.GroupLayout(cell36);
         cell36.setLayout(cell36Layout);
@@ -707,7 +682,6 @@ public class Game extends javax.swing.JFrame {
         cell37.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell37.setForeground(new java.awt.Color(0, 0, 0));
         cell37.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell37.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell37Layout = new javax.swing.GroupLayout(cell37);
         cell37.setLayout(cell37Layout);
@@ -724,7 +698,6 @@ public class Game extends javax.swing.JFrame {
         cell38.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell38.setForeground(new java.awt.Color(0, 0, 0));
         cell38.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell38.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell38Layout = new javax.swing.GroupLayout(cell38);
         cell38.setLayout(cell38Layout);
@@ -741,7 +714,6 @@ public class Game extends javax.swing.JFrame {
         cell39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell39.setForeground(new java.awt.Color(0, 0, 0));
         cell39.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell39.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell39Layout = new javax.swing.GroupLayout(cell39);
         cell39.setLayout(cell39Layout);
@@ -758,7 +730,6 @@ public class Game extends javax.swing.JFrame {
         cell40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell40.setForeground(new java.awt.Color(0, 0, 0));
         cell40.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell40.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell40Layout = new javax.swing.GroupLayout(cell40);
         cell40.setLayout(cell40Layout);
@@ -775,7 +746,6 @@ public class Game extends javax.swing.JFrame {
         cell41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell41.setForeground(new java.awt.Color(0, 0, 0));
         cell41.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell41.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell41Layout = new javax.swing.GroupLayout(cell41);
         cell41.setLayout(cell41Layout);
@@ -792,7 +762,6 @@ public class Game extends javax.swing.JFrame {
         cell42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell42.setForeground(new java.awt.Color(0, 0, 0));
         cell42.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell42.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell42Layout = new javax.swing.GroupLayout(cell42);
         cell42.setLayout(cell42Layout);
@@ -809,7 +778,6 @@ public class Game extends javax.swing.JFrame {
         cell43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell43.setForeground(new java.awt.Color(0, 0, 0));
         cell43.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell43.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell43Layout = new javax.swing.GroupLayout(cell43);
         cell43.setLayout(cell43Layout);
@@ -826,7 +794,6 @@ public class Game extends javax.swing.JFrame {
         cell44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell44.setForeground(new java.awt.Color(0, 0, 0));
         cell44.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell44.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell44Layout = new javax.swing.GroupLayout(cell44);
         cell44.setLayout(cell44Layout);
@@ -891,7 +858,6 @@ public class Game extends javax.swing.JFrame {
         cell45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell45.setForeground(new java.awt.Color(0, 0, 0));
         cell45.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell45.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell45Layout = new javax.swing.GroupLayout(cell45);
         cell45.setLayout(cell45Layout);
@@ -908,7 +874,6 @@ public class Game extends javax.swing.JFrame {
         cell46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell46.setForeground(new java.awt.Color(0, 0, 0));
         cell46.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell46.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell46Layout = new javax.swing.GroupLayout(cell46);
         cell46.setLayout(cell46Layout);
@@ -925,7 +890,6 @@ public class Game extends javax.swing.JFrame {
         cell47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell47.setForeground(new java.awt.Color(0, 0, 0));
         cell47.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell47.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell47Layout = new javax.swing.GroupLayout(cell47);
         cell47.setLayout(cell47Layout);
@@ -942,7 +906,6 @@ public class Game extends javax.swing.JFrame {
         cell48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell48.setForeground(new java.awt.Color(0, 0, 0));
         cell48.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell48.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell48Layout = new javax.swing.GroupLayout(cell48);
         cell48.setLayout(cell48Layout);
@@ -959,7 +922,6 @@ public class Game extends javax.swing.JFrame {
         cell49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell49.setForeground(new java.awt.Color(0, 0, 0));
         cell49.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell49.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell49Layout = new javax.swing.GroupLayout(cell49);
         cell49.setLayout(cell49Layout);
@@ -976,7 +938,6 @@ public class Game extends javax.swing.JFrame {
         cell50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell50.setForeground(new java.awt.Color(0, 0, 0));
         cell50.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell50.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell50Layout = new javax.swing.GroupLayout(cell50);
         cell50.setLayout(cell50Layout);
@@ -993,7 +954,6 @@ public class Game extends javax.swing.JFrame {
         cell51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell51.setForeground(new java.awt.Color(0, 0, 0));
         cell51.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell51.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell51Layout = new javax.swing.GroupLayout(cell51);
         cell51.setLayout(cell51Layout);
@@ -1010,7 +970,6 @@ public class Game extends javax.swing.JFrame {
         cell52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell52.setForeground(new java.awt.Color(0, 0, 0));
         cell52.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell52.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell52Layout = new javax.swing.GroupLayout(cell52);
         cell52.setLayout(cell52Layout);
@@ -1027,7 +986,6 @@ public class Game extends javax.swing.JFrame {
         cell53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell53.setForeground(new java.awt.Color(0, 0, 0));
         cell53.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell53.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell53Layout = new javax.swing.GroupLayout(cell53);
         cell53.setLayout(cell53Layout);
@@ -1044,7 +1002,6 @@ public class Game extends javax.swing.JFrame {
         cell54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell54.setForeground(new java.awt.Color(0, 0, 0));
         cell54.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell54.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell54Layout = new javax.swing.GroupLayout(cell54);
         cell54.setLayout(cell54Layout);
@@ -1061,7 +1018,6 @@ public class Game extends javax.swing.JFrame {
         cell55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell55.setForeground(new java.awt.Color(0, 0, 0));
         cell55.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell55.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell55Layout = new javax.swing.GroupLayout(cell55);
         cell55.setLayout(cell55Layout);
@@ -1122,11 +1078,10 @@ public class Game extends javax.swing.JFrame {
         row6.setMaximumSize(new java.awt.Dimension(32767, 64));
         row6.setPreferredSize(new java.awt.Dimension(704, 64));
 
-        cell56.setBackground(new java.awt.Color(0, 0, 0));
+        cell56.setBackground(new java.awt.Color(255, 255, 0));
         cell56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell56.setForeground(new java.awt.Color(0, 0, 0));
         cell56.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell56.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell56Layout = new javax.swing.GroupLayout(cell56);
         cell56.setLayout(cell56Layout);
@@ -1143,7 +1098,6 @@ public class Game extends javax.swing.JFrame {
         cell57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell57.setForeground(new java.awt.Color(0, 0, 0));
         cell57.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell57.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell57Layout = new javax.swing.GroupLayout(cell57);
         cell57.setLayout(cell57Layout);
@@ -1160,7 +1114,6 @@ public class Game extends javax.swing.JFrame {
         cell58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell58.setForeground(new java.awt.Color(0, 0, 0));
         cell58.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell58.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell58Layout = new javax.swing.GroupLayout(cell58);
         cell58.setLayout(cell58Layout);
@@ -1177,7 +1130,6 @@ public class Game extends javax.swing.JFrame {
         cell59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell59.setForeground(new java.awt.Color(0, 0, 0));
         cell59.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell59.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell59Layout = new javax.swing.GroupLayout(cell59);
         cell59.setLayout(cell59Layout);
@@ -1194,7 +1146,6 @@ public class Game extends javax.swing.JFrame {
         cell60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell60.setForeground(new java.awt.Color(0, 0, 0));
         cell60.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell60.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell60Layout = new javax.swing.GroupLayout(cell60);
         cell60.setLayout(cell60Layout);
@@ -1211,7 +1162,6 @@ public class Game extends javax.swing.JFrame {
         cell61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell61.setForeground(new java.awt.Color(0, 0, 0));
         cell61.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell61.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell61Layout = new javax.swing.GroupLayout(cell61);
         cell61.setLayout(cell61Layout);
@@ -1228,7 +1178,6 @@ public class Game extends javax.swing.JFrame {
         cell62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell62.setForeground(new java.awt.Color(0, 0, 0));
         cell62.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell62.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell62Layout = new javax.swing.GroupLayout(cell62);
         cell62.setLayout(cell62Layout);
@@ -1245,7 +1194,6 @@ public class Game extends javax.swing.JFrame {
         cell63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell63.setForeground(new java.awt.Color(0, 0, 0));
         cell63.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell63.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell63Layout = new javax.swing.GroupLayout(cell63);
         cell63.setLayout(cell63Layout);
@@ -1262,7 +1210,6 @@ public class Game extends javax.swing.JFrame {
         cell64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell64.setForeground(new java.awt.Color(0, 0, 0));
         cell64.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell64.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell64Layout = new javax.swing.GroupLayout(cell64);
         cell64.setLayout(cell64Layout);
@@ -1279,7 +1226,6 @@ public class Game extends javax.swing.JFrame {
         cell65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell65.setForeground(new java.awt.Color(0, 0, 0));
         cell65.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell65.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell65Layout = new javax.swing.GroupLayout(cell65);
         cell65.setLayout(cell65Layout);
@@ -1296,7 +1242,6 @@ public class Game extends javax.swing.JFrame {
         cell66.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell66.setForeground(new java.awt.Color(0, 0, 0));
         cell66.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell66.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell66Layout = new javax.swing.GroupLayout(cell66);
         cell66.setLayout(cell66Layout);
@@ -1361,7 +1306,6 @@ public class Game extends javax.swing.JFrame {
         cell67.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell67.setForeground(new java.awt.Color(0, 0, 0));
         cell67.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell67.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell67Layout = new javax.swing.GroupLayout(cell67);
         cell67.setLayout(cell67Layout);
@@ -1378,7 +1322,6 @@ public class Game extends javax.swing.JFrame {
         cell68.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell68.setForeground(new java.awt.Color(0, 0, 0));
         cell68.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell68.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell68Layout = new javax.swing.GroupLayout(cell68);
         cell68.setLayout(cell68Layout);
@@ -1395,7 +1338,6 @@ public class Game extends javax.swing.JFrame {
         cell69.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell69.setForeground(new java.awt.Color(0, 0, 0));
         cell69.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell69.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell69Layout = new javax.swing.GroupLayout(cell69);
         cell69.setLayout(cell69Layout);
@@ -1412,7 +1354,6 @@ public class Game extends javax.swing.JFrame {
         cell70.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell70.setForeground(new java.awt.Color(0, 0, 0));
         cell70.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell70.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell70Layout = new javax.swing.GroupLayout(cell70);
         cell70.setLayout(cell70Layout);
@@ -1429,7 +1370,6 @@ public class Game extends javax.swing.JFrame {
         cell71.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell71.setForeground(new java.awt.Color(0, 0, 0));
         cell71.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell71.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell71Layout = new javax.swing.GroupLayout(cell71);
         cell71.setLayout(cell71Layout);
@@ -1446,7 +1386,6 @@ public class Game extends javax.swing.JFrame {
         cell72.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell72.setForeground(new java.awt.Color(0, 0, 0));
         cell72.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell72.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell72Layout = new javax.swing.GroupLayout(cell72);
         cell72.setLayout(cell72Layout);
@@ -1463,7 +1402,6 @@ public class Game extends javax.swing.JFrame {
         cell73.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell73.setForeground(new java.awt.Color(0, 0, 0));
         cell73.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell73.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell73Layout = new javax.swing.GroupLayout(cell73);
         cell73.setLayout(cell73Layout);
@@ -1480,7 +1418,6 @@ public class Game extends javax.swing.JFrame {
         cell74.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell74.setForeground(new java.awt.Color(0, 0, 0));
         cell74.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell74.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell74Layout = new javax.swing.GroupLayout(cell74);
         cell74.setLayout(cell74Layout);
@@ -1497,7 +1434,6 @@ public class Game extends javax.swing.JFrame {
         cell75.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell75.setForeground(new java.awt.Color(0, 0, 0));
         cell75.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell75.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell75Layout = new javax.swing.GroupLayout(cell75);
         cell75.setLayout(cell75Layout);
@@ -1514,7 +1450,6 @@ public class Game extends javax.swing.JFrame {
         cell76.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell76.setForeground(new java.awt.Color(0, 0, 0));
         cell76.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell76.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell76Layout = new javax.swing.GroupLayout(cell76);
         cell76.setLayout(cell76Layout);
@@ -1531,7 +1466,6 @@ public class Game extends javax.swing.JFrame {
         cell77.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell77.setForeground(new java.awt.Color(0, 0, 0));
         cell77.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell77.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell77Layout = new javax.swing.GroupLayout(cell77);
         cell77.setLayout(cell77Layout);
@@ -1596,7 +1530,6 @@ public class Game extends javax.swing.JFrame {
         cell78.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell78.setForeground(new java.awt.Color(0, 0, 0));
         cell78.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell78.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell78Layout = new javax.swing.GroupLayout(cell78);
         cell78.setLayout(cell78Layout);
@@ -1613,7 +1546,6 @@ public class Game extends javax.swing.JFrame {
         cell79.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell79.setForeground(new java.awt.Color(0, 0, 0));
         cell79.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell79.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell79Layout = new javax.swing.GroupLayout(cell79);
         cell79.setLayout(cell79Layout);
@@ -1630,7 +1562,6 @@ public class Game extends javax.swing.JFrame {
         cell80.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell80.setForeground(new java.awt.Color(0, 0, 0));
         cell80.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell80.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell80Layout = new javax.swing.GroupLayout(cell80);
         cell80.setLayout(cell80Layout);
@@ -1647,7 +1578,6 @@ public class Game extends javax.swing.JFrame {
         cell81.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell81.setForeground(new java.awt.Color(0, 0, 0));
         cell81.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell81.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell81Layout = new javax.swing.GroupLayout(cell81);
         cell81.setLayout(cell81Layout);
@@ -1664,7 +1594,6 @@ public class Game extends javax.swing.JFrame {
         cell82.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell82.setForeground(new java.awt.Color(0, 0, 0));
         cell82.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell82.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell82Layout = new javax.swing.GroupLayout(cell82);
         cell82.setLayout(cell82Layout);
@@ -1681,7 +1610,6 @@ public class Game extends javax.swing.JFrame {
         cell83.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell83.setForeground(new java.awt.Color(0, 0, 0));
         cell83.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell83.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell83Layout = new javax.swing.GroupLayout(cell83);
         cell83.setLayout(cell83Layout);
@@ -1698,7 +1626,6 @@ public class Game extends javax.swing.JFrame {
         cell84.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell84.setForeground(new java.awt.Color(0, 0, 0));
         cell84.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell84.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell84Layout = new javax.swing.GroupLayout(cell84);
         cell84.setLayout(cell84Layout);
@@ -1715,7 +1642,6 @@ public class Game extends javax.swing.JFrame {
         cell85.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell85.setForeground(new java.awt.Color(0, 0, 0));
         cell85.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell85.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell85Layout = new javax.swing.GroupLayout(cell85);
         cell85.setLayout(cell85Layout);
@@ -1732,7 +1658,6 @@ public class Game extends javax.swing.JFrame {
         cell86.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell86.setForeground(new java.awt.Color(0, 0, 0));
         cell86.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell86.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell86Layout = new javax.swing.GroupLayout(cell86);
         cell86.setLayout(cell86Layout);
@@ -1749,7 +1674,6 @@ public class Game extends javax.swing.JFrame {
         cell87.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell87.setForeground(new java.awt.Color(0, 0, 0));
         cell87.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell87.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell87Layout = new javax.swing.GroupLayout(cell87);
         cell87.setLayout(cell87Layout);
@@ -1766,7 +1690,6 @@ public class Game extends javax.swing.JFrame {
         cell88.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell88.setForeground(new java.awt.Color(0, 0, 0));
         cell88.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell88.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell88Layout = new javax.swing.GroupLayout(cell88);
         cell88.setLayout(cell88Layout);
@@ -1831,7 +1754,6 @@ public class Game extends javax.swing.JFrame {
         cell89.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell89.setForeground(new java.awt.Color(0, 0, 0));
         cell89.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell89.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell89Layout = new javax.swing.GroupLayout(cell89);
         cell89.setLayout(cell89Layout);
@@ -1848,7 +1770,6 @@ public class Game extends javax.swing.JFrame {
         cell90.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell90.setForeground(new java.awt.Color(0, 0, 0));
         cell90.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell90.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell90Layout = new javax.swing.GroupLayout(cell90);
         cell90.setLayout(cell90Layout);
@@ -1865,7 +1786,6 @@ public class Game extends javax.swing.JFrame {
         cell91.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell91.setForeground(new java.awt.Color(0, 0, 0));
         cell91.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell91.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell91Layout = new javax.swing.GroupLayout(cell91);
         cell91.setLayout(cell91Layout);
@@ -1882,7 +1802,6 @@ public class Game extends javax.swing.JFrame {
         cell92.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell92.setForeground(new java.awt.Color(0, 0, 0));
         cell92.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell92.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell92Layout = new javax.swing.GroupLayout(cell92);
         cell92.setLayout(cell92Layout);
@@ -1899,7 +1818,6 @@ public class Game extends javax.swing.JFrame {
         cell93.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell93.setForeground(new java.awt.Color(0, 0, 0));
         cell93.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell93.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell93Layout = new javax.swing.GroupLayout(cell93);
         cell93.setLayout(cell93Layout);
@@ -1916,7 +1834,6 @@ public class Game extends javax.swing.JFrame {
         cell94.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell94.setForeground(new java.awt.Color(0, 0, 0));
         cell94.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell94.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell94Layout = new javax.swing.GroupLayout(cell94);
         cell94.setLayout(cell94Layout);
@@ -1933,7 +1850,6 @@ public class Game extends javax.swing.JFrame {
         cell95.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell95.setForeground(new java.awt.Color(0, 0, 0));
         cell95.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell95.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell95Layout = new javax.swing.GroupLayout(cell95);
         cell95.setLayout(cell95Layout);
@@ -1950,7 +1866,6 @@ public class Game extends javax.swing.JFrame {
         cell96.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell96.setForeground(new java.awt.Color(0, 0, 0));
         cell96.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell96.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell96Layout = new javax.swing.GroupLayout(cell96);
         cell96.setLayout(cell96Layout);
@@ -1967,7 +1882,6 @@ public class Game extends javax.swing.JFrame {
         cell97.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell97.setForeground(new java.awt.Color(0, 0, 0));
         cell97.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell97.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell97Layout = new javax.swing.GroupLayout(cell97);
         cell97.setLayout(cell97Layout);
@@ -1984,7 +1898,6 @@ public class Game extends javax.swing.JFrame {
         cell98.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell98.setForeground(new java.awt.Color(0, 0, 0));
         cell98.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell98.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell98Layout = new javax.swing.GroupLayout(cell98);
         cell98.setLayout(cell98Layout);
@@ -2001,7 +1914,6 @@ public class Game extends javax.swing.JFrame {
         cell99.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell99.setForeground(new java.awt.Color(0, 0, 0));
         cell99.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell99.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell99Layout = new javax.swing.GroupLayout(cell99);
         cell99.setLayout(cell99Layout);
@@ -2066,7 +1978,6 @@ public class Game extends javax.swing.JFrame {
         cell100.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell100.setForeground(new java.awt.Color(0, 0, 0));
         cell100.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell100.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell100Layout = new javax.swing.GroupLayout(cell100);
         cell100.setLayout(cell100Layout);
@@ -2083,7 +1994,6 @@ public class Game extends javax.swing.JFrame {
         cell101.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell101.setForeground(new java.awt.Color(0, 0, 0));
         cell101.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell101.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell101Layout = new javax.swing.GroupLayout(cell101);
         cell101.setLayout(cell101Layout);
@@ -2100,7 +2010,6 @@ public class Game extends javax.swing.JFrame {
         cell102.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell102.setForeground(new java.awt.Color(0, 0, 0));
         cell102.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell102.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell102Layout = new javax.swing.GroupLayout(cell102);
         cell102.setLayout(cell102Layout);
@@ -2117,7 +2026,6 @@ public class Game extends javax.swing.JFrame {
         cell103.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell103.setForeground(new java.awt.Color(0, 0, 0));
         cell103.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell103.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell103Layout = new javax.swing.GroupLayout(cell103);
         cell103.setLayout(cell103Layout);
@@ -2134,7 +2042,6 @@ public class Game extends javax.swing.JFrame {
         cell104.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell104.setForeground(new java.awt.Color(0, 0, 0));
         cell104.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell104.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell104Layout = new javax.swing.GroupLayout(cell104);
         cell104.setLayout(cell104Layout);
@@ -2151,7 +2058,6 @@ public class Game extends javax.swing.JFrame {
         cell105.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell105.setForeground(new java.awt.Color(0, 0, 0));
         cell105.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell105.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell105Layout = new javax.swing.GroupLayout(cell105);
         cell105.setLayout(cell105Layout);
@@ -2168,7 +2074,6 @@ public class Game extends javax.swing.JFrame {
         cell106.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell106.setForeground(new java.awt.Color(0, 0, 0));
         cell106.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell106.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell106Layout = new javax.swing.GroupLayout(cell106);
         cell106.setLayout(cell106Layout);
@@ -2185,7 +2090,6 @@ public class Game extends javax.swing.JFrame {
         cell107.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell107.setForeground(new java.awt.Color(0, 0, 0));
         cell107.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell107.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell107Layout = new javax.swing.GroupLayout(cell107);
         cell107.setLayout(cell107Layout);
@@ -2202,7 +2106,6 @@ public class Game extends javax.swing.JFrame {
         cell108.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell108.setForeground(new java.awt.Color(0, 0, 0));
         cell108.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell108.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell108Layout = new javax.swing.GroupLayout(cell108);
         cell108.setLayout(cell108Layout);
@@ -2219,7 +2122,6 @@ public class Game extends javax.swing.JFrame {
         cell109.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell109.setForeground(new java.awt.Color(0, 0, 0));
         cell109.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell109.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell109Layout = new javax.swing.GroupLayout(cell109);
         cell109.setLayout(cell109Layout);
@@ -2236,7 +2138,6 @@ public class Game extends javax.swing.JFrame {
         cell110.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell110.setForeground(new java.awt.Color(0, 0, 0));
         cell110.setPreferredSize(new java.awt.Dimension(64, 64));
-        cell110.setSize(new java.awt.Dimension(64, 64));
 
         javax.swing.GroupLayout cell110Layout = new javax.swing.GroupLayout(cell110);
         cell110.setLayout(cell110Layout);

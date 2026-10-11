@@ -5,21 +5,19 @@ package com.mycompany.tue_tds;
  * @author kyllianlim
  */
 public class PriorityQueue {
-    
+
     Link head = null;
     Link end = null;
-    
+
     boolean isEmpty() {
         return head == null;
     }
-    
-    void enqueue(Node input, int parentId) {
-        
-        Node[] nodeArray = {input, Astar.grid[parentId / Astar.grid[0].length][parentId % Astar.grid[0].length]};
-        
-        Link l = new Link(nodeArray, null);
 
-        if (head == null || input.finalCost.get(parentId) < head.value[0].finalCost.get(parentId)) {
+    void enqueue(Node input, double priority) {
+
+        Link l = new Link(input, priority, null);
+
+        if (head == null || priority < head.priority) {
             l.next = head;
             head = l;
             if (end == null) {
@@ -27,10 +25,10 @@ public class PriorityQueue {
             }
             return;
         }
-        
+
         Link current = head;
-        
-        while (current.next != null && current.next.value[0].finalCost.get(parentId) <= input.finalCost.get(parentId)) {
+
+        while (current.next != null && current.next.priority <= priority) {
             current = current.next;
         }
         l.next = current.next;
@@ -39,12 +37,12 @@ public class PriorityQueue {
             end = l;
         }
     }
-        
-    Node[] dequeue() {
+
+    Node dequeue() {
         if (isEmpty()) {
-            throw new NullPointerException("Queue is empty");
+            throw new IllegalStateException("Queue is empty");
         } else {
-            Node[] output = head.value;
+            Node output = head.value;
             head = head.next;
             if (head == null) {
                 end = null;

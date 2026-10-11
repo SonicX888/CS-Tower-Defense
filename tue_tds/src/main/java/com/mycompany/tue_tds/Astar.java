@@ -1,32 +1,29 @@
 package com.mycompany.tue_tds;
 
-import java.util.Collections;
 import java.util.ArrayList;
-
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  *
  * @author kyllianlim
  */
 public class Astar {
-    
+
     static Node[][] grid = new Node[9][11];
-    static PriorityQueue astarQueue = new PriorityQueue();
     static double cost = 64;
-    static double pastCost = 0;
-    static double finalCost = 0;
-    
+
     static void gridCreation() {
         int id = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 int x = j * 64;
-                int y = (i+1) * 64;
+                int y = (i + 1) * 64;
                 grid[i][j] = new Node(
-                        id, 
-                        x, 
-                        y, 
-                        Astar.heuristic(x, y, 704, 384), 
+                        id,
+                        x,
+                        y,
                         false
                 );
                 id += 1;
@@ -36,70 +33,83 @@ public class Astar {
             for (int j = 0; j < grid[0].length; j++) {
                 ArrayList<Node> neighbors = new ArrayList<Node>();
                 if (j + 1 < 11) {
-                    neighbors.add(grid[i][j+1]);
+                    neighbors.add(grid[i][j + 1]);
                 }
                 if (i - 1 >= 0) {
-                    neighbors.add(grid[i-1][j]);
+                    neighbors.add(grid[i - 1][j]);
                 }
                 if (i + 1 < 9) {
-                    neighbors.add(grid[i+1][j]);
+                    neighbors.add(grid[i + 1][j]);
                 }
                 if (j - 1 >= 0) {
-                    neighbors.add(grid[i][j-1]);
+                    neighbors.add(grid[i][j - 1]);
                 }
                 grid[i][j].neighbors = neighbors;
             }
         }
     }
-    
+
     static double heuristic(int xA, int yA, int xB, int yB) {
         return Math.sqrt(
                 Math.pow((xB - xA), 2)
-                        + Math.pow((yB - yA), 2)
+                + Math.pow((yB - yA), 2)
         );
     }
-    
-    static ArrayList<Node> reconstructPath(ArrayList<Node[]> explored) {
-        ArrayList<Node> result = new ArrayList<Node>();
-        Node current = explored.get(explored.size() - 1)[0];
-        Node parent = explored.get(explored.size() - 1)[1];
-        result.add(current);
-        for (int i = explored.size() - 2; i >= 0; i--) {
-            if (explored.get(i)[0].id == parent.id) {
-                current = explored.get(i)[0];
-                parent = explored.get(i)[1];
-                result.add(current);
-                continue;
-            }
+
+    static ArrayList<Node> reconstructPath(
+            HashMap<Node, Node> cameFrom,
+            Node current
+    ) {
+        ArrayList<Node> path = new ArrayList<>();
+
+        while (current != null) {
+            path.add(current);
+            current = cameFrom.get(current);
         }
-        Collections.reverse(result);
-        return result;
+
+        Collections.reverse(path);
+        return path;
     }
-    
+
     static ArrayList<Node> findPath(Node start) {
-        ArrayList<Node[]> explored = new ArrayList<Node[]>();
-        Node parent = null;
-        Node[] newStart = {start};
-        while (!astarQueue.isEmpty()) {
-            if (newStart[0].id == 54) {
-                return reconstructPath(explored);
+        Node goal = grid[4][10];
+        HashMap<Node, Double> g = new HashMap<>();
+        HashMap<Node, Node> cameFrom = new HashMap<>();
+        HashSet<Node> closed = new HashSet<>();
+        PriorityQueue open = new PriorityQueue();
+
+        g.put(start, 0.0);
+        open.enqueue(start, start.heuristicCost);
+
+        while (!open.isEmpty()) {
+
+            Node current = open.dequeue();
+
+            if (current == goal) {
+                return reconstructPath(cameFrom, current);
             }
-            for (int i = 0; i < newStart[0].neighbors.size(); i++) {
-                if (!newStart[0].neighbors.get(i).isTower) {
-                    finalCost = newStart[0].neighbors.get(i).heuristicCost + pastCost + cost;
+
+            if (closed.contains(current)) {
+                continue;
+            } else {
+                closed.add(current);
+            }
+
+            for (Node n : current.neighbors) {
+                if (n.isTower || closed.contains(n)) {
+                    continue;
                 }
-                if (parent == null) {
-                    newStart[0].neighbors.get(i).finalCost.put(start.id, finalCost);
-                    astarQueue.enqueue(newStart[0].neighbors.get(i), start.id);
-                } else {
-                    newStart[0].neighbors.get(i).finalCost.put(parent.id, finalCost);
-                    astarQueue.enqueue(newStart[0].neighbors.get(i), parent.id);
+                double tentative = g.get(current) + cost;
+                double gScore = Double.POSITIVE_INFINITY;
+                if (g.get(n) != null) {
+                    gScore = g.get(n);
+                }
+                if (tentative < gScore) {
+                    g.put(n, tentative);
+                    cameFrom.put(n, current);
+                    open.enqueue(n, tentative + n.heuristicCost);
                 }
             }
-            parent = newStart[0];
-            newStart = astarQueue.dequeue();
-            pastCost = newStart[0].finalCost.get(parent.id);
-            explored.add(newStart);
         }
         return null;
     }

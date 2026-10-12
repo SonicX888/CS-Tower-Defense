@@ -1,4 +1,4 @@
-package com.mycompany.tue_tds;
+package com.mycompany.cs_tower_defense;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,10 +50,7 @@ public class Astar {
     }
 
     static double heuristic(int xA, int yA, int xB, int yB) {
-        return Math.sqrt(
-                Math.pow((xB - xA), 2)
-                + Math.pow((yB - yA), 2)
-        );
+        return Math.abs(xB - xA) + Math.abs(yB - yA);
     }
 
     static ArrayList<Node> reconstructPath(

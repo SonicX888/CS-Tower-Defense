@@ -12,6 +12,8 @@ public class Tower {
     int y;
     int id;
     int towerType;
+    long lastShot = 0;
+    long fireRate = 0;
     JLabel sprite;
     
     public static class TowerTypes{
@@ -20,11 +22,28 @@ public class Tower {
         public static final int TOWER_C = 2;
     }
     
-    public Tower(int x, int y, int id, int towerType){
+    public Tower(int x, int y, int towerType, long lastShot, long fireRate){
         this.x = x;
         this.y = y;
-        this.id = id;
         this.towerType = towerType;
+        this.lastShot = lastShot;
+        this.fireRate = fireRate;
+    }
+
+    public long getLastShot() {
+        return lastShot;
+    }
+
+    public void setLastShot(long lastShot) {
+        this.lastShot = lastShot;
+    }
+
+    public long getFireRate() {
+        return fireRate;
+    }
+
+    public void setFireRate(long fireRate) {
+        this.fireRate = fireRate;
     }
 
     public int getX() {

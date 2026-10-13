@@ -11,7 +11,7 @@ import java.awt.event.KeyListener;
  *
  * @author omero
  */
-public class KeyboardInputs implements KeyListener{
+public class KeyboardInputs implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -20,9 +20,9 @@ public class KeyboardInputs implements KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_A){
+        if (e.getKeyCode() == KeyEvent.VK_A) {
             System.out.println("Pressed A");
-        } else if (e.getKeyCode() == KeyEvent.VK_B){
+        } else if (e.getKeyCode() == KeyEvent.VK_B) {
             System.out.println("Pressed B");
         }
 
@@ -31,5 +31,5 @@ public class KeyboardInputs implements KeyListener{
     @Override
     public void keyReleased(KeyEvent e) {
     }
-    
+
 }

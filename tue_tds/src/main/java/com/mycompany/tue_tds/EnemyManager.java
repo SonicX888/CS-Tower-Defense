@@ -1,5 +1,6 @@
 package com.mycompany.tue_tds;
 
+import java.awt.Container;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -10,7 +11,7 @@ import javax.swing.JLabel;
  */
 public class EnemyManager extends GameManager {
 
-    ArrayList<Enemy> enemiesArray = new ArrayList<Enemy>();
+    public static ArrayList<Enemy> enemiesArray = new ArrayList<Enemy>();
     int creationSpeed = 5000;
     final int UPGRADESPEED = 900;
     String upgradesOrder = "hp";
@@ -25,7 +26,7 @@ public class EnemyManager extends GameManager {
             Enemy enemy = new Enemy(
                     0,
                     64 * (cell + 1),
-                    2,
+                    5,
                     2,
                     2,
                     1,
@@ -67,11 +68,28 @@ public class EnemyManager extends GameManager {
             }
         }
     }
+    
+    void enemyDead(){
+        enemiesArray.removeIf(e -> {
+            if (e.isDead()){
+                if (e.sprite != null){
+                    Container parent = e.sprite.getParent();
+                    if (parent != null){
+                        parent.remove(e.sprite);
+                        parent.repaint();
+                    }
+                }
+                return true;
+            }
+            return false;
+        });
+    }
 
     @Override
     void update() {
         enemiesCreation();
         enemiesMovements();
+        enemyDead();
     }
 
     @Override

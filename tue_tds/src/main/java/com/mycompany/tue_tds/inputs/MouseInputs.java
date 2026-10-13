@@ -8,20 +8,40 @@ package com.mycompany.tue_tds.inputs;
  *
  * @author omero
  */
+import com.mycompany.tue_tds.Game;
+import com.mycompany.tue_tds.TowerManager;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 public class MouseInputs implements MouseListener, MouseMotionListener{
 
+    public static int x;
+    public static int y;
+    
+    public static int getX() {
+        return x;
+    }
+
+    public static int getY() {
+        return y;
+    }
+    
+    
+
     @Override
     public void mouseClicked(MouseEvent e) {
+        
         if (e.getButton() == MouseEvent.BUTTON1){
-            System.out.println("Left button clicked");
-        } else if (e.getButton() == MouseEvent.BUTTON3){
-            System.out.println("Right button clicked");
+            if (!"null".equals(Game.selectedTowerType)){
+                x = e.getX() / 64;
+                y = e.getY() / 64;
+                Game.selectedTowerType = "null";
+                System.out.print(x);
+                System.out.println(y);
+            }
+            
         }
-
     }
 
     @Override

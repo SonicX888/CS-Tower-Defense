@@ -37,12 +37,12 @@ public class EnemyManager extends GameManager {
             enemiesArray.add(enemy);
             enemy.sprite = new JLabel(new ImageIcon(
                     EnemyManager.class.getResource(
-                            "/assets/grass_block.png"
+                            "/images/grass_block.png"
                     )));
             enemy.sprite.setSize(enemy.sprite.getPreferredSize());
         }
     }
-
+    
     void enemiesMovements() {
         for (Enemy e : enemiesArray) {
             ArrayList<Node> path = Astar.findPath(e.node);
@@ -84,12 +84,30 @@ public class EnemyManager extends GameManager {
             return false;
         });
     }
+    
+    void enemiesGoalReached() {
+        enemiesArray.removeIf(e -> {
+            if (e.goalReached()){
+                if (e.sprite != null){
+                    Container parent = e.sprite.getParent();
+                    if (parent != null){
+                        Main.hp.takeDamage(e.hp);
+                        parent.remove(e.sprite);
+                        parent.repaint();
+                    }
+                }
+                return true;
+            }
+            return false;
+        });
+    }
 
     @Override
     void update() {
         enemiesCreation();
         enemiesMovements();
         enemyDead();
+        enemiesGoalReached();
     }
 
     @Override

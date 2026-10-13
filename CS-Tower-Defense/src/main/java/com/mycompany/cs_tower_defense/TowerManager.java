@@ -1,6 +1,6 @@
 package com.mycompany.cs_tower_defense;
 
-import com.mycompany.tue_tds.inputs.MouseInputs;
+import com.mycompany.cs_tower_defense.inputs.MouseInputs;
 import java.awt.Container;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
@@ -29,7 +29,7 @@ public class TowerManager extends GameManager {
         tower = new Tower(MouseInputs.x * 64, MouseInputs.y * 64, id, 0, 1000000);
         id++;
         towerList.add(tower);
-        tower.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/assets/computer.png")));
+        tower.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/images/computer.png")));
         tower.sprite.setSize(tower.sprite.getPreferredSize());
     }
     
@@ -42,7 +42,7 @@ public class TowerManager extends GameManager {
                 if (closestEnemy != null){
                     t.lastShot = now;
                     Bullets bullet = new Bullets(t.x, t.y, towerDamage, closestEnemy, bulletSpeed);
-                    bullet.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/Assets/java_logo.png")));
+                    bullet.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/images/java_logo.png")));
                     bullet.sprite.setSize(64, 64);
                     bulletList.add(bullet);
                     //closestEnemy.takeDamage(towerDamage);

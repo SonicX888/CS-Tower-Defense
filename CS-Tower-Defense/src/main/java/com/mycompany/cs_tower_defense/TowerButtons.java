@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.tue_tds;
+package com.mycompany.cs_tower_defense;
 
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -21,7 +21,7 @@ public class TowerButtons {
         tower1Button();
     }
     public void tower1Button(){
-        ImageIcon tower1Image = new ImageIcon(getClass().getResource("/assets/computer.png"));
+        ImageIcon tower1Image = new ImageIcon(getClass().getResource("/images/computer.png"));
         tower1Button = new JButton(tower1Image);
         tower1Button.setFocusPainted(false);
         tower1Button.setBounds(5 * 64, 10 * 64, 64, 64);

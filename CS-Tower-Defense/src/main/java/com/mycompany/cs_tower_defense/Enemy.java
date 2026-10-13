@@ -42,7 +42,11 @@ public class Enemy implements Damageable {
         this.node = node;
 
     }
-
+    
+    public boolean goalReached() {
+        return x == 640 && y == 320;
+    }
+    
     @Override
     public void takeDamage(int amount) {
         hp -= amount;

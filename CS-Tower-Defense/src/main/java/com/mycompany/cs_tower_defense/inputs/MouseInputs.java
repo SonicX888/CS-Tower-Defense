@@ -8,8 +8,8 @@ package com.mycompany.cs_tower_defense.inputs;
  *
  * @author omero
  */
-import com.mycompany.tue_tds.Game;
-import com.mycompany.tue_tds.TowerManager;
+import com.mycompany.cs_tower_defense.Game;
+import com.mycompany.cs_tower_defense.TowerManager;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;

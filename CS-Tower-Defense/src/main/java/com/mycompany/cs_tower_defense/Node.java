@@ -1,4 +1,4 @@
-package com.mycompany.tue_tds;
+package com.mycompany.cs_tower_defense;
 
 import java.util.ArrayList;
 import java.util.HashMap;

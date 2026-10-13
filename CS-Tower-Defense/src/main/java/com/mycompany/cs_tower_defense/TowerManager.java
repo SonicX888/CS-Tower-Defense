@@ -1,4 +1,4 @@
-package com.mycompany.tue_tds;
+package com.mycompany.cs_tower_defense;
 
 import com.mycompany.tue_tds.inputs.MouseInputs;
 import java.awt.Container;

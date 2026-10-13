@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.tue_tds;
+package com.mycompany.cs_tower_defense;
 
-import com.mycompany.tue_tds.inputs.KeyboardInputs;
-import com.mycompany.tue_tds.inputs.MouseInputs;
+import com.mycompany.cs_tower_defense.inputs.KeyboardInputs;
+import com.mycompany.cs_tower_defense.inputs.MouseInputs;
 
 /**
  *

@@ -65,7 +65,7 @@ public class TowerManager extends GameManager {
                     t.lastShot = now;
                     Bullets bullet = new Bullets(t.x, t.y, towerDamage, closestEnemy, bulletSpeed);
                     bullet.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/images/java_logo.png")));
-                    bullet.sprite.setSize(16, 16);
+                    bullet.sprite.setSize(bullet.sprite.getPreferredSize());
                     bulletList.add(bullet);
                 }
             }

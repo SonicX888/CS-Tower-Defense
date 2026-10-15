@@ -13,8 +13,8 @@ public class TimeManager extends GameManager {
     
     long timeStart = System.currentTimeMillis();
     long now;
-    String stringSeconds;
-    String stringMinutes;
+    static String stringSeconds;
+    static String stringMinutes;
     JLabel amount;
     JLabel oldAmount;
     

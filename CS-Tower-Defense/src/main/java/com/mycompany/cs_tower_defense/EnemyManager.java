@@ -13,21 +13,24 @@ public class EnemyManager extends GameManager {
 
     public static ArrayList<Enemy> enemiesArray = new ArrayList<Enemy>();
     int creationSpeed = 5000;
-    final int UPGRADESPEED = 900;
-    String upgradesOrder = "hp";
+    final int UPGRADE_SPEED = 15000;
+    String upgradesOrder = "creation speed";
     long lastSpawn = System.currentTimeMillis();
+    long lastUpgrade = System.currentTimeMillis();
+    int enemyHP = 2;
+    int enemySpeed = 1;
 
     void enemiesCreation() {
-        long now = System.currentTimeMillis();
-        if ((now - lastSpawn) >= creationSpeed) {
-            lastSpawn = now;
+        long nowCreation = System.currentTimeMillis();
+        if ((nowCreation - lastSpawn) >= creationSpeed) {
+            lastSpawn = nowCreation;
             int cell = (int) (Math.random() * 9);
             Node enemyNode = Astar.grid[cell][0];
             Enemy enemy = new Enemy(
                     0,
                     64 * (cell + 1),
-                    5,
-                    2,
+                    enemyHP,
+                    enemySpeed,
                     2,
                     1,
                     0,
@@ -65,6 +68,26 @@ public class EnemyManager extends GameManager {
                 if (next.y < e.y) {
                     e.y -= e.speed;
                 }
+            }
+        }
+    }
+    
+    void enemiesUpgrade() {
+        long nowUpgrade = System.currentTimeMillis();
+        if ((nowUpgrade - lastUpgrade) >= UPGRADE_SPEED) {
+            lastUpgrade = nowUpgrade;
+            if (upgradesOrder.equals("creation speed") && creationSpeed >= 100) {
+                System.out.println(upgradesOrder);
+                creationSpeed -= 100;
+                upgradesOrder = "hp";
+            } else if (upgradesOrder.equals("hp")) {
+                System.out.println(upgradesOrder);
+                enemyHP += 1;
+                upgradesOrder = "speed";
+            } else if (upgradesOrder.equals("speed") && enemySpeed <= 64) {
+                System.out.println(upgradesOrder);
+                enemySpeed *= 2;
+                upgradesOrder = "creation speed";
             }
         }
     }
@@ -107,6 +130,7 @@ public class EnemyManager extends GameManager {
     void update() {
         enemiesCreation();
         enemiesMovements();
+        enemiesUpgrade();
         enemyDead();
         enemiesGoalReached();
     }

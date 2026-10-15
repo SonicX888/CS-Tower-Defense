@@ -17,18 +17,29 @@ public class Main {
     public static TowerManager towers = new TowerManager();
     static TimeManager time = new TimeManager();
     static HPManager hp = new HPManager();
+    static boolean isGameOver = false;
     
     static void run() {
         Timer timer = new Timer(16, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for (GameManager m : managers) {
-                    m.update();
+                if (hp.hp > 0) {
+                    for (GameManager m : managers) {
+                        m.update();
+                    }
+                    for (GameManager m : managers) {
+                        m.draw(frame);
+                    }
+                    frame.getLayeredPane().repaint();
+                } else {
+                    if (!isGameOver) {
+                        GameOver GameOverFrame = new GameOver();
+                        frame.setVisible(false);
+                        GameOverFrame.setLocationRelativeTo(null);
+                        GameOverFrame.setVisible(true);
+                        isGameOver = true;
+                    }
                 }
-                for (GameManager m : managers) {
-                    m.draw(frame);
-                }
-                frame.getLayeredPane().repaint();
             }
         });
         timer.start();

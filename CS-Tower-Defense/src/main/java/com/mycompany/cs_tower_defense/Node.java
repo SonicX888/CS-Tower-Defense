@@ -29,4 +29,21 @@ public class Node {
         this.isTower = isTower;
         this.heuristicCost = Astar.heuristic(x, y, 640, 320);
     }
+
+    public void setIsTower(boolean isTower) {
+        this.isTower = isTower;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public boolean isIsTower() {
+        return isTower;
+    }
 }
+

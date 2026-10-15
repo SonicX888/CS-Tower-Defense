@@ -29,7 +29,7 @@ public class TowerButtons {
         
         tower1Button.addActionListener( e -> {
             Game.selectedTowerType = "Tower 1";
-            System.out.println("Tower 1 is selected");
+            //System.out.println("Tower 1 is selected");
         });
         
         

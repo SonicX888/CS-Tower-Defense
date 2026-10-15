@@ -11,7 +11,8 @@ import java.util.HashSet;
  */
 public class Astar {
 
-    static Node[][] grid = new Node[9][11];
+    public static Node[][] grid = new Node[9][11];
+    public static ArrayList<Node> gridList = new ArrayList<Node>();
     static double cost = 64;
 
     static void gridCreation() {
@@ -27,6 +28,7 @@ public class Astar {
                         false
                 );
                 id += 1;
+                gridList.add(grid[i][j]);
             }
         }
         for (int i = 0; i < grid.length; i++) {

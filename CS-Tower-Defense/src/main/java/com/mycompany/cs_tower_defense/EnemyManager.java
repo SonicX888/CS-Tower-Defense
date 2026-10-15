@@ -72,6 +72,7 @@ public class EnemyManager extends GameManager {
     void enemyDead(){
         enemiesArray.removeIf(e -> {
             if (e.isDead()){
+                Economy.gold += e.reward;
                 if (e.sprite != null){
                     Container parent = e.sprite.getParent();
                     if (parent != null){

@@ -8,8 +8,11 @@ package com.mycompany.cs_tower_defense.inputs;
  *
  * @author omero
  */
+import com.mycompany.cs_tower_defense.Astar;
+import static com.mycompany.cs_tower_defense.Astar.grid;
 import com.mycompany.cs_tower_defense.Game;
-import com.mycompany.cs_tower_defense.TowerManager;
+import com.mycompany.cs_tower_defense.Main;
+import com.mycompany.cs_tower_defense.Node;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -36,9 +39,15 @@ public class MouseInputs implements MouseListener, MouseMotionListener{
             if (!"null".equals(Game.selectedTowerType)){
                 x = e.getX() / 64;
                 y = e.getY() / 64;
+                Main.towers.buildTower1();
                 Game.selectedTowerType = "null";
                 System.out.print(x);
-                System.out.println(y);
+                System.out.print(y);
+                for (Node n: Astar.gridList){
+                    if (n.getX() == x * 64 && n.getY() == y * 64){
+                        n.setIsTower(true);
+                    }
+                }
             }
             
         }

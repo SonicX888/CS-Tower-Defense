@@ -14,7 +14,7 @@ public class Main {
     static Game frame = new Game();
     static ArrayList<GameManager> managers = new ArrayList<GameManager>();
     static EnemyManager enemies = new EnemyManager();
-    static TowerManager towers = new TowerManager();
+    public static TowerManager towers = new TowerManager();
     static TimeManager time = new TimeManager();
     static HPManager hp = new HPManager();
     

@@ -14,7 +14,8 @@ public class TowerManager extends GameManager {
     
     public long towerRange = 200;
     public int towerDamage = 1;
-    public int bulletSpeed = 5;
+    public int bulletSpeed = 7;
+    public int towerCost = 10;
     public static ArrayList<Tower> towerList = new ArrayList<Tower>();
     public static ArrayList<Bullets> bulletList = new ArrayList<Bullets>();
     private Tower tower;
@@ -25,12 +26,33 @@ public class TowerManager extends GameManager {
         buildTower1();
     }
     
-    private void buildTower1(){
-        tower = new Tower(MouseInputs.x * 64, MouseInputs.y * 64, id, 0, 1000000);
-        id++;
-        towerList.add(tower);
-        tower.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/images/computer.png")));
-        tower.sprite.setSize(tower.sprite.getPreferredSize());
+    public void buildTower1(){
+        int x = MouseInputs.x;
+        int y = MouseInputs.y;
+        
+        if (x == 0 || y == 0 || y >= 10){
+            return;
+        }
+        if (x == 10 && y == 5){
+            return;
+        }
+        
+        for (Tower t: towerList){
+            if (t.x/ 64 == x && t.y / 64 == y){
+                //System.out.println("You cannnot place a tower here");
+                return;
+            }
+        }
+        if (Economy.gold >= towerCost){
+            Economy.gold -= towerCost;
+            System.out.println(Economy.gold);
+            tower = new Tower(x * 64, y * 64, id, 0, 1000);
+            id++;
+            towerList.add(tower);
+            tower.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/assets/computer.png")));
+            tower.sprite.setSize(tower.sprite.getPreferredSize());
+        }
+        
     }
     
     private void shootEnemy(){
@@ -43,10 +65,8 @@ public class TowerManager extends GameManager {
                     t.lastShot = now;
                     Bullets bullet = new Bullets(t.x, t.y, towerDamage, closestEnemy, bulletSpeed);
                     bullet.sprite = new JLabel(new ImageIcon(TowerManager.class.getResource("/images/java_logo.png")));
-                    bullet.sprite.setSize(64, 64);
+                    bullet.sprite.setSize(16, 16);
                     bulletList.add(bullet);
-                    //closestEnemy.takeDamage(towerDamage);
-                    //System.out.println("Tower attacked enemy:" + closestEnemy);
                 }
             }
         }
@@ -93,7 +113,6 @@ public class TowerManager extends GameManager {
 
     @Override
     void update() {
-        buildTower();
         shootEnemy();
         shootBullet();
     }

@@ -12,8 +12,8 @@ public class Tower {
     int y;
     int id;
     int towerType;
-    long lastShot = 0;
-    long fireRate = 0;
+    long lastShot;
+    long fireRate;
     JLabel sprite;
     
     public static class TowerTypes{

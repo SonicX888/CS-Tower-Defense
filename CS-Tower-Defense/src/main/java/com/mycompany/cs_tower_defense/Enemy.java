@@ -1,21 +1,19 @@
 package com.mycompany.cs_tower_defense;
 
 import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author kyllianlim
  */
-public class Enemy implements Damageable {
+public abstract class Enemy implements Damageable {
 
     int x;
     int y;
     int hp;
     int speed;
     int reward;
-    int type;
-    int countBullet;
-    boolean bulletTouched;
     Node node;
     JLabel sprite;
 
@@ -25,10 +23,8 @@ public class Enemy implements Damageable {
             int hp,
             int speed,
             int reward,
-            int type,
-            int countBullet,
-            boolean bulletTouched,
-            Node node
+            Node node,
+            String imagePath
     ) {
 
         this.x = x;
@@ -36,10 +32,9 @@ public class Enemy implements Damageable {
         this.hp = hp;
         this.speed = speed;
         this.reward = reward;
-        this.type = type;
-        this.countBullet = countBullet;
-        this.bulletTouched = bulletTouched;
         this.node = node;
+        this.sprite = new JLabel(new ImageIcon(Enemy.class.getResource(imagePath)));
+        this.sprite.setSize(sprite.getPreferredSize());
 
     }
     

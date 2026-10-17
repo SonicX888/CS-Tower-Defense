@@ -2,8 +2,6 @@ package com.mycompany.cs_tower_defense;
 
 import java.awt.Container;
 import java.util.ArrayList;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 /**
  *
@@ -12,37 +10,42 @@ import javax.swing.JLabel;
 public class EnemyManager extends GameManager {
 
     public static ArrayList<Enemy> enemiesArray = new ArrayList<Enemy>();
-    int creationSpeed = 5000;
-    final int UPGRADE_SPEED = 15000;
+    int creationSpeed = 3000;
+    final int UPGRADE_SPEED = 20000;
     String upgradesOrder = "creation speed";
     long lastSpawn = System.currentTimeMillis();
+    long lastSpawnStrong = System.currentTimeMillis();
     long lastUpgrade = System.currentTimeMillis();
     int enemyHP = 2;
     int enemySpeed = 1;
 
     void enemiesCreation() {
         long nowCreation = System.currentTimeMillis();
-        if ((nowCreation - lastSpawn) >= creationSpeed) {
+        long elapsed = nowCreation - lastSpawn;
+        long elapsedStrong = nowCreation - lastSpawnStrong;
+        
+        if (elapsed >= creationSpeed) {
+            
             lastSpawn = nowCreation;
             int cell = (int) (Math.random() * 9);
+            int y = 64 * (cell + 1);
             Node enemyNode = Astar.grid[cell][0];
-            Enemy enemy = new Enemy(
-                    0,
-                    64 * (cell + 1),
-                    enemyHP,
-                    enemySpeed,
-                    2,
-                    1,
-                    0,
-                    false,
-                    enemyNode
-            );
+            Enemy enemy;
+            int minutes = Integer.parseInt(Main.time.stringMinutes);
+            
+            if (minutes >= 1 && elapsedStrong >= creationSpeed*2) {
+                lastSpawnStrong = nowCreation;
+                int type = (int) (Math.random() * 2);
+                if (minutes >= 2 && type == 1) {
+                    enemy = new TankEnemy(0, y, enemyHP, enemySpeed, enemyHP, enemyNode);
+                } else {
+                    enemy = new FastEnemy(0, y, enemyHP, enemySpeed, enemyHP, enemyNode);
+                }
+            } else {
+                enemy = new BasicEnemy(0, y, enemyHP, enemySpeed, enemyHP, enemyNode);
+            }
+
             enemiesArray.add(enemy);
-            enemy.sprite = new JLabel(new ImageIcon(
-                    EnemyManager.class.getResource(
-                            "/images/grass_block.png"
-                    )));
-            enemy.sprite.setSize(enemy.sprite.getPreferredSize());
         }
     }
     
@@ -76,16 +79,13 @@ public class EnemyManager extends GameManager {
         long nowUpgrade = System.currentTimeMillis();
         if ((nowUpgrade - lastUpgrade) >= UPGRADE_SPEED) {
             lastUpgrade = nowUpgrade;
-            if (upgradesOrder.equals("creation speed") && creationSpeed >= 100) {
-                System.out.println(upgradesOrder);
-                creationSpeed -= 100;
+            if (upgradesOrder.equals("creation speed") && creationSpeed > 500) {
+                creationSpeed -= 500;
                 upgradesOrder = "hp";
             } else if (upgradesOrder.equals("hp")) {
-                System.out.println(upgradesOrder);
                 enemyHP += 1;
                 upgradesOrder = "speed";
-            } else if (upgradesOrder.equals("speed") && enemySpeed <= 64) {
-                System.out.println(upgradesOrder);
+            } else if (upgradesOrder.equals("speed") && enemySpeed < 8) {
                 enemySpeed *= 2;
                 upgradesOrder = "creation speed";
             }

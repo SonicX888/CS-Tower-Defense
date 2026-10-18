@@ -17,6 +17,12 @@ This game was made for the 2026 TU/e 2IP90 Challenge-Based Learning project.
 
 Launch the file Main.java
 
+## Documents:
+
+Backlog: `CS-Tower-Defense/documents/Backlog_CBL.docx`
+
+Advanced topics: `CS-Tower-Defense/documents/Advanced_Topics.docx`
+
 ## Credits:
 
 - Grass block image by Mojang

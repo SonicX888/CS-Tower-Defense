@@ -79,14 +79,18 @@ public class EnemyManager extends GameManager {
         long nowUpgrade = System.currentTimeMillis();
         if ((nowUpgrade - lastUpgrade) >= UPGRADE_SPEED) {
             lastUpgrade = nowUpgrade;
-            if (upgradesOrder.equals("creation speed") && creationSpeed > 500) {
-                creationSpeed -= 500;
+            if (upgradesOrder.equals("creation speed")) {
+                if (creationSpeed > 250) {
+                    creationSpeed -= 250;
+                }
                 upgradesOrder = "hp";
             } else if (upgradesOrder.equals("hp")) {
                 enemyHP += 1;
                 upgradesOrder = "speed";
-            } else if (upgradesOrder.equals("speed") && enemySpeed < 8) {
-                enemySpeed *= 2;
+            } else if (upgradesOrder.equals("speed")) {
+                if (enemySpeed < 4) {
+                    enemySpeed *= 2;
+                }
                 upgradesOrder = "creation speed";
             }
         }

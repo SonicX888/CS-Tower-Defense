@@ -18,6 +18,8 @@ public class Main {
     static TimeManager time = new TimeManager();
     static HPManager hp = new HPManager();
     static boolean isGameOver = false;
+    static Sound mainTheme = new Sound("/sounds/PVZ_theme.wav");
+    static Sound gameOverTheme = new Sound("/sounds/Game_over_theme.wav");
     
     static void run() {
         Timer timer = new Timer(16, new ActionListener() {
@@ -37,6 +39,9 @@ public class Main {
                         frame.setVisible(false);
                         GameOverFrame.setLocationRelativeTo(null);
                         GameOverFrame.setVisible(true);
+                        mainTheme.stop();
+                        gameOverTheme.play();
+                        gameOverTheme.loop();
                         isGameOver = true;
                     }
                 }
@@ -54,6 +59,9 @@ public class Main {
         managers.add(time);
         managers.add(hp);
         Astar.gridCreation();
+        hp.soundInit();
+        mainTheme.play();
+        mainTheme.loop();
         run();
 
     }

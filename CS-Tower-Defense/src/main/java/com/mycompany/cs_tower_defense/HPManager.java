@@ -13,6 +13,14 @@ public class HPManager extends GameManager implements Damageable {
     int hp = 100;
     JLabel amount;
     JLabel oldAmount;
+    Sound[] damageArray = new Sound[5];
+    int next = 0;
+    
+    void soundInit() {
+        for (int i = 0; i < damageArray.length; i++) {
+            damageArray[i] = new Sound("/sounds/Base_damage.wav");
+        }
+    }
     
     @Override
     void update() {
@@ -40,6 +48,8 @@ public class HPManager extends GameManager implements Damageable {
     @Override
     public void takeDamage(int amount) {
         hp -= amount;
+        damageArray[next].play();
+        next = (next + 1) % 5;
     }
     
     @Override

@@ -1,6 +1,6 @@
 # CS-Tower-Defense
 
-CS-Tower-Defense is a video game developed in Java using Java Swing. It is a _tower defense_ style game. The player places computers on a grid to defend a cell from enemies.
+CS-Tower-Defense is a video game developed in Java using Java Swing. It is a _tower defense_ style game. The player places computers on a grid to defend themselves against enemies.
 
 This game was made for the 2026 TU/e 2IP90 Challenge-Based Learning project.
 
@@ -15,7 +15,7 @@ This game was made for the 2026 TU/e 2IP90 Challenge-Based Learning project.
 
 ## How to run:
 
-Launch the file Main.java
+Launch the file `CS-Tower-Defense/src/main/java/com/mycompany/cs_tower_defense/Main.java`
 
 ## Documents:
 

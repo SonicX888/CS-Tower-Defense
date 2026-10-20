@@ -1,5 +1,11 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.enemies;
 
+import com.mycompany.cs_tower_defense.GameManager;
+import com.mycompany.cs_tower_defense.Main;
+import com.mycompany.cs_tower_defense.gui.Economy;
+import com.mycompany.cs_tower_defense.gui.Game;
+import com.mycompany.cs_tower_defense.path.Astar;
+import com.mycompany.cs_tower_defense.path.Node;
 import java.awt.Container;
 import java.util.ArrayList;
 
@@ -20,7 +26,7 @@ public class EnemyManager extends GameManager {
     // is created
     int creationSpeed = 3000;
     // number of milliseconds counted each time an enemy is upgraded
-    static final int UPGRADE_SPEED = 20000;
+    static final int UPGRADE_SPEED = 15000;
     // puts the creation speed as the first skill to be upgraded
     String upgradesOrder = "creation speed";
 
@@ -134,7 +140,7 @@ public class EnemyManager extends GameManager {
 
         long nowUpgrade = System.currentTimeMillis();
 
-        // checks if 20 seconds had passed
+        // checks if 15 seconds had passed
         if ((nowUpgrade - lastUpgrade) >= UPGRADE_SPEED) {
             lastUpgrade = nowUpgrade;
             // checks if it's the turn of the creation speed to be upgraded
@@ -218,7 +224,7 @@ public class EnemyManager extends GameManager {
      * class Main.
      */
     @Override
-    void update() {
+    public void update() {
         // creates enemies
         enemiesCreation();
         // moves enemies
@@ -238,7 +244,7 @@ public class EnemyManager extends GameManager {
      * @param frame window of the game where the enemies are drawn
      */
     @Override
-    void draw(Game frame) {
+    public void draw(Game frame) {
         // goes through each enemy
         for (Enemy e : enemiesArray) {
             // checks if the enemy is not on the window yet

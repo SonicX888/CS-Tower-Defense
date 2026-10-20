@@ -1,4 +1,4 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.gui;
 
 import com.mycompany.cs_tower_defense.inputs.MouseInputs;
 import java.awt.Color;
@@ -2236,15 +2236,16 @@ public class Game extends javax.swing.JFrame {
         row11Layout.setHorizontalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, row11Layout.createSequentialGroup()
-                .addContainerGap(394, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(224, 224, 224))
+                .addContainerGap(417, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(199, 199, 199))
         );
         row11Layout.setVerticalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, row11Layout.createSequentialGroup()
-                .addGap(0, 50, Short.MAX_VALUE)
-                .addComponent(jLabel1))
+            .addGroup(row11Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         getContentPane().add(row11);

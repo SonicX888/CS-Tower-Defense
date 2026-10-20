@@ -1,5 +1,6 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.gui;
 
+import com.mycompany.cs_tower_defense.GameManager;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -19,9 +20,10 @@ public class TimeManager extends GameManager {
     long timeStart = System.currentTimeMillis();
     // current time
     long now;
-    // seconds and minutes survived written with 2 digits
-    static String stringSeconds;
-    static String stringMinutes;
+    // seconds and minutes survived written with 2 digits (starts at 00 so
+    // they can be read before the first update)
+    static String stringSeconds = "00";
+    public static String stringMinutes = "00";
     // label that shows the time on the window
     JLabel amount;
     // label of the previous update that has to be removed
@@ -32,7 +34,7 @@ public class TimeManager extends GameManager {
      * is called infinitely in the class Main.
      */
     @Override
-    void update() {
+    public void update() {
         now = System.currentTimeMillis();
         // keeps the old label so it can be removed
         oldAmount = amount;
@@ -71,7 +73,7 @@ public class TimeManager extends GameManager {
      * @param frame window of the game where the time is drawn
      */
     @Override
-    void draw(Game frame) {
+    public void draw(Game frame) {
         // checks if the new label is not on the window yet
         if (amount.getParent() == null) {
             // removes the old label from the window

@@ -48,7 +48,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>26</maven.compiler.release>
-        <exec.mainClass>com.mycompany.tue_tds.Tue_tds</exec.mainClass>
+        <exec.mainClass>com.mycompany.cs_tower_defense.Main</exec.mainClass>
     </properties>
     <name>CS-Tower-Defense</name>
 </project>

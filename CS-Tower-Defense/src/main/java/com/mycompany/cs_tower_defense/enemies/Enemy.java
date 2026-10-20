@@ -1,5 +1,7 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.enemies;
 
+import com.mycompany.cs_tower_defense.Damageable;
+import com.mycompany.cs_tower_defense.path.Node;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -14,8 +16,8 @@ import javax.swing.JLabel;
 public abstract class Enemy implements Damageable {
 
     // position of the enemy on the window
-    int x;
-    int y;
+    public int x;
+    public int y;
     // health points of the enemy
     int hp;
     // number of pixels the enemy moves at each update

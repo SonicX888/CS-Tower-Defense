@@ -1,4 +1,4 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.path;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,7 +26,7 @@ public class Astar {
     /**
      * Creates every node of the grid and links each node to its neighbors.
      */
-    static void gridCreation() {
+    public static void gridCreation() {
         // goes through each row of the grid
         for (int i = 0; i < grid.length; i++) {
             // goes through each column of the grid
@@ -117,8 +117,8 @@ public class Astar {
      * @return the list of nodes going from the start to the goal, or null if
      * the goal can't be reached
      */
-    // goal of the enemies: cell in the middle of the last column
     public static ArrayList<Node> findPath(Node start) {
+        // goal of the enemies: cell in the middle of the last column
         Node goal = grid[4][10];
         // cost to reach each node from the start
         HashMap<Node, Double> g = new HashMap<>();

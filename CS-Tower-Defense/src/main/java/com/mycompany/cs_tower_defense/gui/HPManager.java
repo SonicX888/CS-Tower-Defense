@@ -1,5 +1,8 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.gui;
 
+import com.mycompany.cs_tower_defense.Damageable;
+import com.mycompany.cs_tower_defense.GameManager;
+import com.mycompany.cs_tower_defense.Sound;
 import java.awt.Color;
 import java.awt.Container;
 import javax.swing.JLabel;
@@ -15,7 +18,7 @@ import javax.swing.JLabel;
 public class HPManager extends GameManager implements Damageable {
 
     // hp of the base at the start of the game
-    int hp = 100;
+    public int hp = 100;
     // label that shows the hp on the window
     JLabel amount;
     // label of the previous update that has to be removed
@@ -29,7 +32,7 @@ public class HPManager extends GameManager implements Damageable {
      * Loads the damage sound 5 times so several sounds can play at the same
      * time.
      */
-    void soundInit() {
+    public void soundInit() {
         for (int i = 0; i < damageArray.length; i++) {
             damageArray[i] = new Sound("/sounds/Base_damage.wav");
         }
@@ -40,7 +43,7 @@ public class HPManager extends GameManager implements Damageable {
      * infinitely in the class Main.
      */
     @Override
-    void update() {
+    public void update() {
         // keeps the old label so it can be removed
         oldAmount = amount;
         // creates the label with the current hp
@@ -57,7 +60,7 @@ public class HPManager extends GameManager implements Damageable {
      * @param frame window of the game where the hp is drawn
      */
     @Override
-    void draw(Game frame) {
+    public void draw(Game frame) {
         // checks if the new label is not on the window yet
         if (amount.getParent() == null) {
             // removes the old label from the window

@@ -1,5 +1,13 @@
 package com.mycompany.cs_tower_defense;
 
+import com.mycompany.cs_tower_defense.enemies.EnemyManager;
+import com.mycompany.cs_tower_defense.gui.Economy;
+import com.mycompany.cs_tower_defense.gui.Game;
+import com.mycompany.cs_tower_defense.gui.GameOver;
+import com.mycompany.cs_tower_defense.gui.HPManager;
+import com.mycompany.cs_tower_defense.gui.TimeManager;
+import com.mycompany.cs_tower_defense.path.Astar;
+import com.mycompany.cs_tower_defense.towers.TowerManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -22,8 +30,8 @@ public class Main {
     // managers of the game
     static EnemyManager enemies = new EnemyManager();
     public static TowerManager towers = new TowerManager();
-    static TimeManager time = new TimeManager();
-    static HPManager hp = new HPManager();
+    public static TimeManager time = new TimeManager();
+    public static HPManager hp = new HPManager();
     static Economy economy = new Economy();
     // checks if the game over window was already shown
     static boolean isGameOver = false;

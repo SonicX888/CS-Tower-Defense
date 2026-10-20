@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.gui;
+
+import com.mycompany.cs_tower_defense.Main;
 
 /**
  *
@@ -35,7 +37,6 @@ public class GameOver extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Game Over");
         setBackground(new java.awt.Color(0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(704, 704));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));

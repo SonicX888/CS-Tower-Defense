@@ -1,4 +1,4 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.path;
 
 /**
  * Class of a link of the priority queue

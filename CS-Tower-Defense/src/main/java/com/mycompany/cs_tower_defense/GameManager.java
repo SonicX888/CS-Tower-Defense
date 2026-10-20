@@ -1,5 +1,7 @@
 package com.mycompany.cs_tower_defense;
 
+import com.mycompany.cs_tower_defense.gui.Game;
+
 /**
  * Abstract class that every manager of the game extends
  *
@@ -14,7 +16,7 @@ public abstract class GameManager {
      * Method that updates the manager and is called infinitely in the class
      * Main.
      */
-    abstract void update();
+    public abstract void update();
 
     /**
      * Method that draws the manager on the window and is called infinitely in
@@ -22,6 +24,6 @@ public abstract class GameManager {
      *
      * @param frame window of the game where the manager is drawn
      */
-    abstract void draw(Game frame);
+    public abstract void draw(Game frame);
 
 }

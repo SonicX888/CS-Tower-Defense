@@ -1,4 +1,6 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.enemies;
+
+import com.mycompany.cs_tower_defense.path.Node;
 
 /**
  * Class of the fast enemy that has less hp but moves faster

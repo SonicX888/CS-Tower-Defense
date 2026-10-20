@@ -1,5 +1,6 @@
-package com.mycompany.cs_tower_defense;
+package com.mycompany.cs_tower_defense.path;
 
+import com.mycompany.cs_tower_defense.path.Astar;
 import java.util.ArrayList;
 
 /**
@@ -13,8 +14,8 @@ import java.util.ArrayList;
 public class Node {
 
     // position of the node on the window
-    int x;
-    int y;
+    public int x;
+    public int y;
     // estimated distance from the node to the goal
     double heuristicCost;
     // neighbors of the node (right, up, down and left)

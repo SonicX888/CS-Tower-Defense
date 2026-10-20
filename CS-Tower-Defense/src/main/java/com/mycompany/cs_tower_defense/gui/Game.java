@@ -125,6 +125,7 @@ public class Game extends javax.swing.JFrame {
         cell55 = new javax.swing.JPanel();
         row6 = new javax.swing.JPanel();
         cell56 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         cell57 = new javax.swing.JPanel();
         cell58 = new javax.swing.JPanel();
         cell59 = new javax.swing.JPanel();
@@ -203,7 +204,7 @@ public class Game extends javax.swing.JFrame {
         );
         row1Layout.setVerticalGroup(
             row1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGap(0, 66, Short.MAX_VALUE)
+            .addGap(0, 64, Short.MAX_VALUE)
         );
 
         getContentPane().add(row1);
@@ -1108,20 +1109,23 @@ public class Game extends javax.swing.JFrame {
         row6.setMaximumSize(new java.awt.Dimension(32767, 64));
         row6.setPreferredSize(new java.awt.Dimension(704, 64));
 
-        cell56.setBackground(new java.awt.Color(255, 255, 0));
+        cell56.setBackground(new java.awt.Color(0, 0, 0));
         cell56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell56.setForeground(new java.awt.Color(0, 0, 0));
+        cell56.setToolTipText("");
         cell56.setPreferredSize(new java.awt.Dimension(64, 64));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nerd_face.png"))); // NOI18N
 
         javax.swing.GroupLayout cell56Layout = new javax.swing.GroupLayout(cell56);
         cell56.setLayout(cell56Layout);
         cell56Layout.setHorizontalGroup(
             cell56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         cell56Layout.setVerticalGroup(
             cell56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         cell57.setBackground(new java.awt.Color(0, 0, 0));
@@ -2245,7 +2249,7 @@ public class Game extends javax.swing.JFrame {
             .addGroup(row11Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel1)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         getContentPane().add(row11);
@@ -2379,6 +2383,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JPanel cell98;
     private javax.swing.JPanel cell99;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel row1;
     private javax.swing.JPanel row10;
     private javax.swing.JPanel row11;

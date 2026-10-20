@@ -6,8 +6,8 @@ This game was made for the 2026 TU/e 2IP90 Challenge-Based Learning project.
 
 ## Controls:
 
-- Place a tower: Choose a tower at the bottom of the window, then click on a cell of the grid
-- Upgrade a tower: Click on a tower, then choose what to upgrade
+- Place a tower: Choose a tower at the bottom of the window, then click on a cell of the grid.
+- Upgrade a tower: Right-click on a tower, then click upgrade.
 
 ## Requirements:
 - Java
@@ -27,6 +27,7 @@ Advanced topics: `CS-Tower-Defense/documents/Advanced_Topics.docx`
 
 - Grass block image by Mojang
 - Computer image by Tour De Pizza
+- Nerd face image by arthobbit
 - Java logo by Joe Palrang and modified by Claude (Anthropic)
 - Shower and Sun image made by Claude (Anthropic)
 - Plants vs Zombies main theme by PopCap Games

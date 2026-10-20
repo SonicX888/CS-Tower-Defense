@@ -16,12 +16,25 @@ import java.util.HashSet;
  */
 public class Astar {
 
-    // grid of 9 rows and 11 columns where each node of the map is stored
-    public static Node[][] grid = new Node[9][11];
+    // size of a cell in pixels
+    public static final int CELL_SIZE = 64;
+    // number of rows and columns of the grid
+    public static final int ROWS = 9;
+    public static final int COLUMNS = 11;
+    // row and column of the goal in the grid
+    public static final int GOAL_ROW = 4;
+    public static final int GOAL_COLUMN = 10;
+    // position of the goal on the window in pixels (the grid starts one row
+    // below the top of the window)
+    public static final int GOAL_X = GOAL_COLUMN * CELL_SIZE;
+    public static final int GOAL_Y = (GOAL_ROW + 1) * CELL_SIZE;
+
+    // grid where each node of the map is stored
+    public static Node[][] grid = new Node[ROWS][COLUMNS];
     // list where each node of the grid is stored
     public static ArrayList<Node> gridList = new ArrayList<Node>();
     // cost to move from a node to one of its neighbors (size of a cell)
-    static double cost = 64;
+    static double cost = CELL_SIZE;
 
     /**
      * Creates every node of the grid and links each node to its neighbors.
@@ -32,8 +45,8 @@ public class Astar {
             // goes through each column of the grid
             for (int j = 0; j < grid[0].length; j++) {
                 // computes the position of the node on the window
-                int x = j * 64;
-                int y = (i + 1) * 64;
+                int x = j * CELL_SIZE;
+                int y = (i + 1) * CELL_SIZE;
                 // creates a node without a tower on it
                 grid[i][j] = new Node(
                         x,
@@ -49,7 +62,7 @@ public class Astar {
             for (int j = 0; j < grid[0].length; j++) {
                 ArrayList<Node> neighbors = new ArrayList<Node>();
                 // adds the right neighbor if it exists
-                if (j + 1 < 11) {
+                if (j + 1 < COLUMNS) {
                     neighbors.add(grid[i][j + 1]);
                 }
                 // adds the upper neighbor if it exists
@@ -57,7 +70,7 @@ public class Astar {
                     neighbors.add(grid[i - 1][j]);
                 }
                 // adds the lower neighbor if it exists
-                if (i + 1 < 9) {
+                if (i + 1 < ROWS) {
                     neighbors.add(grid[i + 1][j]);
                 }
                 // adds the left neighbor if it exists
@@ -119,7 +132,7 @@ public class Astar {
      */
     public static ArrayList<Node> findPath(Node start) {
         // goal of the enemies: cell in the middle of the last column
-        Node goal = grid[4][10];
+        Node goal = grid[GOAL_ROW][GOAL_COLUMN];
         // cost to reach each node from the start
         HashMap<Node, Double> g = new HashMap<>();
         // previous node of each node on the best path found

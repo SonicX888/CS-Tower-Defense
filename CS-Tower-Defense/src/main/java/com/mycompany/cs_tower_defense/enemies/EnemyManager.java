@@ -58,8 +58,8 @@ public class EnemyManager extends GameManager {
 
             lastSpawn = nowCreation;
             // chooses a random cell of the first column of the map
-            int cell = (int) (Math.random() * 9);
-            int y = 64 * (cell + 1);
+            int cell = (int) (Math.random() * Astar.ROWS);
+            int y = Astar.CELL_SIZE * (cell + 1);
             Node enemyNode = Astar.grid[cell][0];
             Enemy enemy;
             // gets the number of minutes survived
@@ -100,35 +100,76 @@ public class EnemyManager extends GameManager {
     void enemiesMovements() {
         // goes through each enemy
         for (Enemy e : enemiesArray) {
-            // finds the shortest path from the node of the enemy to the goal
-            ArrayList<Node> path = Astar.findPath(e.node);
+            // next node where the enemy has to go
+            Node next = nextNode(e);
             // skips the enemy if there is no path or if it is on the goal
-            if (path == null || path.size() < 2) {
+            if (next == null) {
                 continue;
             }
-            // next node where the enemy has to go
-            Node next = path.get(1);
             // updates the node of the enemy if it reached the next node
             if (e.x == next.x && e.y == next.y) {
                 e.node = next;
+                // removes the node the enemy left from its path
+                e.path.remove(0);
             } else {
-                // moves the enemy to the right
-                if (next.x > e.x) {
-                    e.x += e.speed;
-                }
-                // moves the enemy to the left
-                if (next.x < e.x) {
-                    e.x -= e.speed;
-                }
-                // moves the enemy down
-                if (next.y > e.y) {
-                    e.y += e.speed;
-                }
-                // moves the enemy up
-                if (next.y < e.y) {
-                    e.y -= e.speed;
-                }
+                moveTowards(e, next);
             }
+        }
+    }
+
+    /**
+     * Finds the next node where an enemy has to go. The path is only computed
+     * with A* when the enemy doesn't have one yet, instead of at every update.
+     *
+     * @param e enemy that moves
+     * @return the next node of the path, or null if there is no path or if
+     * the enemy is on the goal
+     */
+    private Node nextNode(Enemy e) {
+        // computes a new path only if the enemy doesn't have one
+        if (e.path == null) {
+            e.path = Astar.findPath(e.node);
+        }
+        // no next node if there is no path or if the enemy is on the goal
+        if (e.path == null || e.path.size() < 2) {
+            return null;
+        }
+        // the first node is the node of the enemy, the second is the next one
+        return e.path.get(1);
+    }
+
+    /**
+     * Moves an enemy by its speed towards a node.
+     *
+     * @param e enemy that moves
+     * @param next node where the enemy goes
+     */
+    private void moveTowards(Enemy e, Node next) {
+        // moves the enemy to the right
+        if (next.x > e.x) {
+            e.x += e.speed;
+        }
+        // moves the enemy to the left
+        if (next.x < e.x) {
+            e.x -= e.speed;
+        }
+        // moves the enemy down
+        if (next.y > e.y) {
+            e.y += e.speed;
+        }
+        // moves the enemy up
+        if (next.y < e.y) {
+            e.y -= e.speed;
+        }
+    }
+
+    /**
+     * Makes every enemy compute a new path the next time it moves. Called when
+     * a tower is placed, because the shortest paths may have changed.
+     */
+    public static void resetPaths() {
+        for (Enemy e : enemiesArray) {
+            e.path = null;
         }
     }
 

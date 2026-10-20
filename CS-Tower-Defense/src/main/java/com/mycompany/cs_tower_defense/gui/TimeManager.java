@@ -2,7 +2,6 @@ package com.mycompany.cs_tower_defense.gui;
 
 import com.mycompany.cs_tower_defense.GameManager;
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.JLabel;
 
@@ -24,20 +23,25 @@ public class TimeManager extends GameManager {
     // they can be read before the first update)
     static String stringSeconds = "00";
     public static String stringMinutes = "00";
-    // label that shows the time on the window
-    JLabel amount;
-    // label of the previous update that has to be removed
-    JLabel oldAmount;
+    // label that shows the time on the window (created once and updated)
+    JLabel amount = new JLabel();
 
     /**
-     * Method that computes the time survived, creates a new label with it and
-     * is called infinitely in the class Main.
+     * Creates the time manager and places the label at the bottom left of the
+     * window.
+     */
+    public TimeManager() {
+        amount.setLocation(32, 656);
+        amount.setForeground(Color.white);
+    }
+
+    /**
+     * Method that computes the time survived, writes it in the label and is
+     * called infinitely in the class Main.
      */
     @Override
     public void update() {
         now = System.currentTimeMillis();
-        // keeps the old label so it can be removed
-        oldAmount = amount;
         // computes the seconds and minutes since the start of the game
         long seconds = ((now - timeStart) / 1000) % 60;
         long minutes = (now - timeStart) / 1000 / 60;
@@ -53,17 +57,13 @@ public class TimeManager extends GameManager {
         } else {
             stringMinutes = Long.toString(minutes);
         }
-        // creates the label with the time survived
-        amount = new JLabel(
-                "Time Survived: " + stringMinutes + ":" + stringSeconds
-        );
-        amount.setLocation(32, 656);
+        // writes the time survived in the label
+        amount.setText("Time Survived: " + stringMinutes + ":" + stringSeconds);
         // doubles the size of the label
         Dimension size = amount.getPreferredSize();
         size.height *= 2;
         size.width *= 2;
         amount.setSize(size);
-        amount.setForeground(Color.white);
     }
 
     /**
@@ -74,17 +74,8 @@ public class TimeManager extends GameManager {
      */
     @Override
     public void draw(Game frame) {
-        // checks if the new label is not on the window yet
+        // draws the label if it is not on the window yet
         if (amount.getParent() == null) {
-            // removes the old label from the window
-            if (oldAmount != null) {
-                Container parent = oldAmount.getParent();
-                if (parent != null) {
-                    parent.remove(oldAmount);
-                    parent.repaint();
-                }
-            }
-            // draws the new label
             frame.getLayeredPane().add(amount, Integer.valueOf(2));
         }
     }

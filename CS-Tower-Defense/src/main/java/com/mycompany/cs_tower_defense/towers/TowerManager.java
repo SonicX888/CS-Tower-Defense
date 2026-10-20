@@ -5,7 +5,6 @@ import com.mycompany.cs_tower_defense.enemies.Enemy;
 import com.mycompany.cs_tower_defense.enemies.EnemyManager;
 import com.mycompany.cs_tower_defense.gui.Economy;
 import com.mycompany.cs_tower_defense.gui.Game;
-import com.mycompany.cs_tower_defense.inputs.MouseInputs;
 import com.mycompany.cs_tower_defense.path.Astar;
 import com.mycompany.cs_tower_defense.path.Node;
 import java.awt.Container;
@@ -40,20 +39,22 @@ public class TowerManager extends GameManager {
  
     /**
      * Builds a tower (there is only one type of tower for now).
+     *
+     * @param x column of the cell clicked by the player
+     * @param y row of the cell clicked by the player
      */
-    public void buildTower() {
-        buildTower1();
+    public void buildTower(int x, int y) {
+        buildTower1(x, y);
     }
  
     /**
      * Builds a tower on the cell of the grid that the player clicked if there
      * is enough gold.
+     *
+     * @param x column of the cell clicked by the player
+     * @param y row of the cell clicked by the player
      */
-    public void buildTower1() {
-        // gets the cell clicked by the player
-        int x = MouseInputs.x;
-        int y = MouseInputs.y;
- 
+    public void buildTower1(int x, int y) {
         // checks if the player has enough gold before testing the cell, so
         // the node is never marked as a tower if the tower can't be paid
         if (Economy.gold < towerCost) {
@@ -71,9 +72,12 @@ public class TowerManager extends GameManager {
         Economy.gold -= towerCost;
         // creates a level 0 tower that shoots every 2 seconds with the base
         // damage and range
-        tower = new Tower(x * 64, y * 64, 0, 0, 2000, towerDamage, towerRange);
+        tower = new Tower(x * Astar.CELL_SIZE, y * Astar.CELL_SIZE, 0, 0, 2000,
+                towerDamage, towerRange);
         // adds the tower to the array
         towerList.add(tower);
+        // the enemies compute a new path because the tower may block theirs
+        EnemyManager.resetPaths();
         // loads the image of the tower
         tower.sprite = new JLabel(new ImageIcon(
                 TowerManager.class.getResource("/images/computer.png")));
@@ -94,7 +98,8 @@ public class TowerManager extends GameManager {
         // goes through each node of the grid
         for (Node n : Astar.gridList) {
             // returns the node if it is at the given position
-            if (n.getX() == x * 64 && n.getY() == y * 64) {
+            if (n.getX() == x * Astar.CELL_SIZE
+                    && n.getY() == y * Astar.CELL_SIZE) {
                 return n;
             }
         }
@@ -111,21 +116,21 @@ public class TowerManager extends GameManager {
      */
     private boolean canPlaceTower(int x, int y) {
         //prevents placing towers outside of the 9x11 grid and at the first column
-        if (x == 0 || y == 0 || y >= 10) {
+        if (x == 0 || y == 0 || y > Astar.ROWS) {
             Game.gameWindow.popUpText("Can't place a tower at the first column"
                     + " or outside of the grid");
             return false;
         }
  
         //prevents placing tower on the end node
-        if (x == 10 && y == 5) {
+        if (x == Astar.GOAL_COLUMN && y == Astar.GOAL_ROW + 1) {
             Game.gameWindow.popUpText("Can't place a tower at the end node");
             return false;
         }
  
         //prevents placing tower over other towers
         for (Tower t : towerList) {
-            if (t.x / 64 == x && t.y / 64 == y) {
+            if (t.x / Astar.CELL_SIZE == x && t.y / Astar.CELL_SIZE == y) {
                 Game.gameWindow.popUpText("Can't place a tower over "
                         + "another tower");
                 return false;

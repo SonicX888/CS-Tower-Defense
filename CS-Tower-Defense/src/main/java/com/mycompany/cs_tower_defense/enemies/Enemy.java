@@ -1,7 +1,9 @@
 package com.mycompany.cs_tower_defense.enemies;
 
 import com.mycompany.cs_tower_defense.Damageable;
+import com.mycompany.cs_tower_defense.path.Astar;
 import com.mycompany.cs_tower_defense.path.Node;
+import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -26,6 +28,9 @@ public abstract class Enemy implements Damageable {
     int reward;
     // node of the grid where the enemy is
     Node node;
+    // shortest path from the node of the enemy to the goal (null when it
+    // has to be computed again)
+    ArrayList<Node> path;
     // image of the enemy
     JLabel sprite;
 
@@ -69,7 +74,7 @@ public abstract class Enemy implements Damageable {
      * @return true if the enemy reached the goal, false otherwise
      */
     public boolean goalReached() {
-        return x == 640 && y == 320;
+        return x == Astar.GOAL_X && y == Astar.GOAL_Y;
     }
 
     /**

@@ -85,7 +85,6 @@ public class TowerUpgrade extends JFrame {
                 // removes 250 milliseconds between two shots, down to 250
                 // milliseconds
                 t.setFireRate(Math.max(t.fireRate - 250, 250));
-                System.out.println("Tower Upgraded");
                 // closes the frame
                 dispose();
             } else {

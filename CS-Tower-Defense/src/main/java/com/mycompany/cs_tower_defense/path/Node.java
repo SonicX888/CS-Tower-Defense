@@ -39,7 +39,7 @@ public class Node {
         this.y = y;
         this.isTower = isTower;
         // computes the distance from the node to the goal
-        this.heuristicCost = Astar.heuristic(x, y, 640, 320);
+        this.heuristicCost = Astar.heuristic(x, y, Astar.GOAL_X, Astar.GOAL_Y);
     }
 
     /**

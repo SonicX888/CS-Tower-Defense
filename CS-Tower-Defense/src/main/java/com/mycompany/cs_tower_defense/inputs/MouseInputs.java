@@ -2,6 +2,7 @@ package com.mycompany.cs_tower_defense.inputs;
 
 import com.mycompany.cs_tower_defense.Main;
 import com.mycompany.cs_tower_defense.gui.Game;
+import com.mycompany.cs_tower_defense.path.Astar;
 import com.mycompany.cs_tower_defense.towers.Tower;
 import com.mycompany.cs_tower_defense.towers.TowerManager;
 import com.mycompany.cs_tower_defense.towers.TowerUpgrade;
@@ -19,28 +20,6 @@ import java.awt.event.MouseMotionListener;
  * @id 2497778
  */
 public class MouseInputs implements MouseListener, MouseMotionListener {
-
-    // column and row of the cell clicked by the player
-    public static int x;
-    public static int y;
-
-    /**
-     * Returns the column of the cell clicked by the player.
-     *
-     * @return the column of the cell clicked
-     */
-    public static int getX() {
-        return x;
-    }
-
-    /**
-     * Returns the row of the cell clicked by the player.
-     *
-     * @return the row of the cell clicked
-     */
-    public static int getY() {
-        return y;
-    }
 
     /**
      * Not used, but required by the MouseListener interface. The clicks are
@@ -64,15 +43,16 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
 
         // converts the position of the click into a column and a row of the
         // grid (each cell is 64 pixels)
-        x = e.getX() / 64;
-        y = e.getY() / 64;
+        int x = e.getX() / Astar.CELL_SIZE;
+        int y = e.getY() / Astar.CELL_SIZE;
 
         // Calculates where the player left clicked
         // Calls the method that builds towers
         if (e.getButton() == MouseEvent.BUTTON1) {
             // checks if the player selected a tower before clicking
             if (!"null".equals(Game.selectedTowerType)) {
-                Main.towers.buildTower();
+                // builds the tower on the cell clicked
+                Main.towers.buildTower(x, y);
                 // unselects the tower so the next click doesn't build another
                 Game.selectedTowerType = "null";
             }
@@ -83,7 +63,8 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
             // goes through each tower
             for (Tower t : TowerManager.towerList) {
                 // checks if the tower is on the cell clicked
-                if (t.getX() / 64 == x && t.getY() / 64 == y) {
+                if (t.getX() / Astar.CELL_SIZE == x
+                        && t.getY() / Astar.CELL_SIZE == y) {
                     // opens the upgrade frame just above the mouse
                     new TowerUpgrade(t, e.getLocationOnScreen().x - 90,
                             e.getLocationOnScreen().y - 132);

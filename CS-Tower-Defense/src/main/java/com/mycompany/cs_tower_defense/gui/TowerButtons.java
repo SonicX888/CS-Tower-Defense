@@ -1,6 +1,6 @@
 package com.mycompany.cs_tower_defense.gui;
 
-import com.mycompany.cs_tower_defense.gui.Game;
+import com.mycompany.cs_tower_defense.path.Astar;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
@@ -29,8 +29,10 @@ public class TowerButtons {
         tower1Button = new JButton(tower1Image);
         // removes the outline drawn around the image when it is clicked
         tower1Button.setFocusPainted(false);
-        // places the button at the bottom of the window, below the grid
-        tower1Button.setBounds(5 * 64, 10 * 64, 64, 64);
+        // places the button in the middle column, in the row below the grid
+        tower1Button.setBounds(Astar.COLUMNS / 2 * Astar.CELL_SIZE,
+                (Astar.ROWS + 1) * Astar.CELL_SIZE,
+                Astar.CELL_SIZE, Astar.CELL_SIZE);
         // removes the border of the button
         tower1Button.setBorderPainted(false);
 

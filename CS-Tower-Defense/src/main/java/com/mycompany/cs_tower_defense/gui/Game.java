@@ -1,6 +1,7 @@
 package com.mycompany.cs_tower_defense.gui;
 
 import com.mycompany.cs_tower_defense.inputs.MouseInputs;
+import com.mycompany.cs_tower_defense.path.Astar;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JLabel;
@@ -37,8 +38,11 @@ public class Game extends javax.swing.JFrame {
     // when the player can't do the intended action due to any reason
     public void popUpText(String text) {
         JLabel message = new JLabel(text, SwingConstants.CENTER);
-        message.setSize(704, 64);
-        message.setLocation(0, 352);
+        // the message is as wide as the window and as high as a cell
+        message.setSize(Astar.COLUMNS * Astar.CELL_SIZE, Astar.CELL_SIZE);
+        // places the message in the middle of the window (the window has the
+        // rows of the grid plus one row above and one row below)
+        message.setLocation(0, (Astar.ROWS + 2) * Astar.CELL_SIZE / 2);
         message.setForeground(Color.white);
         message.setFont(new Font("Arial", Font.BOLD, 20));
 

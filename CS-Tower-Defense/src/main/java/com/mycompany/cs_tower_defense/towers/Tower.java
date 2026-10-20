@@ -15,8 +15,6 @@ public class Tower {
     // position of the tower on the window
     int x;
     int y;
-    // unique number of the tower
-    int id;
     // level of the tower (starts at 0 and has no maximum)
     int towerLevel;
     // time when the tower shot for the last time
@@ -123,24 +121,6 @@ public class Tower {
      */
     public void setY(int y) {
         this.y = y;
-    }
- 
-    /**
-     * Returns the id of the tower.
-     *
-     * @return the unique number of the tower
-     */
-    public int getId() {
-        return id;
-    }
- 
-    /**
-     * Sets the id of the tower.
-     *
-     * @param id unique number of the tower
-     */
-    public void setId(int id) {
-        this.id = id;
     }
  
     /**

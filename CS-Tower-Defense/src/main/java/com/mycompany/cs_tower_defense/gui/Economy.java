@@ -1,6 +1,7 @@
 package com.mycompany.cs_tower_defense.gui;
 
 import com.mycompany.cs_tower_defense.GameManager;
+import com.mycompany.cs_tower_defense.path.Astar;
 import java.awt.Color;
 import javax.swing.JLabel;
 
@@ -53,7 +54,7 @@ public class Economy extends GameManager {
 
         }
         // places the label at the bottom of the window
-        panel.setLocation(9 * 64, 664);
+        panel.setLocation(9 * Astar.CELL_SIZE, 664);
 
     }
 

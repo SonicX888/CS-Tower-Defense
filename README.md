@@ -19,9 +19,9 @@ Launch the file Main.java
 
 ## Documents:
 
-Backlog: `CS-Tower-Defense/documents/Backlog_CBL.docx`
+Backlog: `CS-Tower-Defense/documents/Backlog_CBL.pdf`
 
-Advanced topics: `CS-Tower-Defense/documents/Advanced_Topics.docx`
+Advanced topics: `CS-Tower-Defense/documents/Advanced_Topics.pdf`
 
 ## Credits:
 

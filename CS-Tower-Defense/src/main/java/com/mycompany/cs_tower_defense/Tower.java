@@ -3,29 +3,27 @@ package com.mycompany.cs_tower_defense;
 import javax.swing.JLabel;
 
 /**
+ * Class that initializes the towers
  *
- * @author kyllianlim
+ * @author Kyllian LIM
+ * @id 2463725
+ * @author Ömer ÖZENLER
+ * @id 2497778
  */
 public class Tower {
-       
+
     int x;
     int y;
     int id;
-    int towerType;
+    int towerLevel;
     long lastShot;
     long fireRate;
     JLabel sprite;
-    
-    public static class TowerTypes{
-        public static final int TOWER_A = 0;
-        public static final int TOWER_B = 1;
-        public static final int TOWER_C = 2;
-    }
-    
-    public Tower(int x, int y, int towerType, long lastShot, long fireRate){
+
+    public Tower(int x, int y, int towerLevel, long lastShot, long fireRate) {
         this.x = x;
         this.y = y;
-        this.towerType = towerType;
+        this.towerLevel = towerLevel;
         this.lastShot = lastShot;
         this.fireRate = fireRate;
     }
@@ -70,11 +68,11 @@ public class Tower {
         this.id = id;
     }
 
-    public int getTowerType() {
-        return towerType;
+    public int getTowerLevel() {
+        return towerLevel;
     }
 
-    public void setTowerType(int towerType) {
-        this.towerType = towerType;
+    public void setTowerLevel(int towerLevel) {
+        this.towerLevel = towerLevel;
     }
 }

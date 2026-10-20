@@ -1,45 +1,70 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.mycompany.cs_tower_defense;
 
-import com.mycompany.cs_tower_defense.inputs.KeyboardInputs;
 import com.mycompany.cs_tower_defense.inputs.MouseInputs;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 /**
+ * Class that creates and displays the map on the screen
  *
- * @author kyllianlim
+ * @author Kyllian LIM
+ * @id 2463725
+ * @author Ömer ÖZENLER
+ * @id 2497778
  */
 public class Game extends javax.swing.JFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Game.class.getName());
-    
-    private TowerButtons towerButtons = new TowerButtons(); 
-    public static String  selectedTowerType = new String("null");
-    private KeyboardInputs keyboardInputs;
+
+    private static final java.util.logging.Logger logger = 
+            java.util.logging.Logger.getLogger(Game.class.getName());
+
+    private final TowerButtons towerButtons = new TowerButtons();
+    public static String selectedTowerType = "null";
     private MouseInputs mouseInputs;
+
     //gets user input
-    public void initInputs(){
-        keyboardInputs = new KeyboardInputs();
+    public void initInputs() {
         mouseInputs = new MouseInputs();
-        
-        addMouseListener(mouseInputs);
-        addMouseMotionListener(mouseInputs);
-        addKeyListener(keyboardInputs);
-        
+
+        getContentPane().addMouseListener(mouseInputs);
+        getContentPane().addMouseMotionListener(mouseInputs);
+
         requestFocus();
     }
-    
+
+    // Creates texts that appear at the middle of the screen
+    // when the player can't do the intended action due to any reason
+    public void popUpText(String text) {
+        JLabel message = new JLabel(text, SwingConstants.CENTER);
+        message.setSize(704, 64);
+        message.setLocation(0, 352);
+        message.setForeground(Color.white);
+        message.setFont(new Font("Arial", Font.BOLD, 20));
+
+        getLayeredPane().add(message, Integer.valueOf(3));
+        getLayeredPane().repaint();
+
+        javax.swing.Timer timer = new javax.swing.Timer(2000, l -> {
+            getLayeredPane().remove(message);
+            getLayeredPane().repaint();
+        });
+
+        timer.setRepeats(false);
+        timer.start();
+    }
+
     /**
      * Creates new form Test
      */
+    public static Game gameWindow;
+
     public Game() {
         initComponents();
-        
+        gameWindow = this;
         getLayeredPane().add(towerButtons.getTower1Button());
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -159,6 +184,7 @@ public class Game extends javax.swing.JFrame {
         cell109 = new javax.swing.JPanel();
         cell110 = new javax.swing.JPanel();
         row11 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CS Tower Defense");
@@ -2202,22 +2228,30 @@ public class Game extends javax.swing.JFrame {
         row11.setMaximumSize(new java.awt.Dimension(32767, 64));
         row11.setPreferredSize(new java.awt.Dimension(704, 64));
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Tower Cost: 10");
+
         javax.swing.GroupLayout row11Layout = new javax.swing.GroupLayout(row11);
         row11.setLayout(row11Layout);
         row11Layout.setHorizontalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 704, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, row11Layout.createSequentialGroup()
+                .addContainerGap(394, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(224, 224, 224))
         );
         row11Layout.setVerticalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 66, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, row11Layout.createSequentialGroup()
+                .addGap(0, 50, Short.MAX_VALUE)
+                .addComponent(jLabel1))
         );
 
         getContentPane().add(row11);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+
     /**
      * @param args the command line arguments
      */
@@ -2343,6 +2377,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JPanel cell97;
     private javax.swing.JPanel cell98;
     private javax.swing.JPanel cell99;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel row1;
     private javax.swing.JPanel row10;
     private javax.swing.JPanel row11;

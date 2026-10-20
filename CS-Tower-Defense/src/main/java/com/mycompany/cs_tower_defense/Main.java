@@ -1,7 +1,7 @@
 package com.mycompany.cs_tower_defense;
 
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.Timer;
 
@@ -24,6 +24,7 @@ public class Main {
     public static TowerManager towers = new TowerManager();
     static TimeManager time = new TimeManager();
     static HPManager hp = new HPManager();
+    static Economy economy = new Economy();
     // checks if the game over window was already shown
     static boolean isGameOver = false;
     // music of the game
@@ -90,6 +91,7 @@ public class Main {
         managers.add(towers);
         managers.add(time);
         managers.add(hp);
+        managers.add(economy);
         // creates the grid of the map
         Astar.gridCreation();
         // loads the damage sounds

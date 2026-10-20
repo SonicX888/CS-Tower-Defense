@@ -117,8 +117,8 @@ public class Astar {
      * @return the list of nodes going from the start to the goal, or null if
      * the goal can't be reached
      */
-    static ArrayList<Node> findPath(Node start) {
-        // goal of the enemies: cell in the middle of the last column
+    // goal of the enemies: cell in the middle of the last column
+    public static ArrayList<Node> findPath(Node start) {
         Node goal = grid[4][10];
         // cost to reach each node from the start
         HashMap<Node, Double> g = new HashMap<>();

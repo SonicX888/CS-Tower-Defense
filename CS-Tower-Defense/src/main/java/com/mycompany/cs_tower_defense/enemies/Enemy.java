@@ -62,7 +62,9 @@ public abstract class Enemy implements Damageable {
         this.reward = reward;
         this.node = node;
         // loads the image of the enemy
-        this.sprite = new JLabel(new ImageIcon(Enemy.class.getResource(imagePath)));
+        this.sprite = new JLabel(new ImageIcon(Enemy.class.getResource(
+                imagePath
+        )));
         // gives the label the size of the image
         this.sprite.setSize(sprite.getPreferredSize());
 

@@ -17,8 +17,8 @@ public class Economy extends GameManager {
 
     // gold of the player at the start of the game
     public static int gold = 170;
-    // label that shows the gold on the window
-    JLabel panel = new JLabel("Gold: " + gold);
+    // label that shows the gold (lines of code) on the window
+    JLabel panel = new JLabel("Lines of code: " + gold);
 
     /**
      * Creates the economy and gives the label the size of its text.
@@ -34,7 +34,7 @@ public class Economy extends GameManager {
     @Override
     public void update() {
         // writes the current gold in the label
-        panel.setText("Gold: " + gold);
+        panel.setText("Lines of code: " + gold);
         // gives the label the size of its new text
         panel.setSize(panel.getPreferredSize());
         panel.setForeground(Color.white);

@@ -31,7 +31,7 @@ public class TowerUpgrade extends JFrame {
      */
     public TowerUpgrade(Tower t, int x, int y) {
         //Creates the upgrade frame
-        setTitle("Tower Upgrade");
+        setTitle("Computer Upgrade");
         setSize(180, 100);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocation(x, y);
@@ -40,13 +40,17 @@ public class TowerUpgrade extends JFrame {
         // removes the title bar and the borders of the frame
         setUndecorated(true);
  
-        // cost of the next upgrade (starts at 10 gold and doubles at each
+        // cost of the next upgrade (starts at 20 gold and doubles at each
         // level)
         int upgradeCost = 20 * (int) Math.pow(2, t.towerLevel);
  
         // creates the labels and the button of the frame
-        JLabel level = new JLabel("Tower Level: " + t.towerLevel, SwingConstants.CENTER);
-        JLabel cost = new JLabel("Upgrade Cost: " + upgradeCost, SwingConstants.CENTER);
+        JLabel level = new JLabel(
+                "Computer Level: " + t.towerLevel, SwingConstants.CENTER
+        );
+        JLabel cost = new JLabel(
+                "Upgrade Cost: " + upgradeCost, SwingConstants.CENTER
+        );
         JButton upgradeButton = new JButton("Upgrade");
  
         // adds the labels and the button to the frame
@@ -89,7 +93,9 @@ public class TowerUpgrade extends JFrame {
                 dispose();
             } else {
                 // tells the player there is not enough gold
-                Game.gameWindow.popUpText("You don't have enough gold");
+                Game.gameWindow.popUpText(
+                        "You don't have enough lines of code"
+                );
             }
         });
         // shows the frame

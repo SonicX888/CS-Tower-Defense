@@ -59,7 +59,7 @@ public class TowerManager extends GameManager {
         // the node is never marked as a tower if the tower can't be paid
         if (Economy.gold < towerCost) {
             // tells the player there is not enough gold
-            Game.gameWindow.popUpText("You don't have enough gold");
+            Game.gameWindow.popUpText("You don't have enough lines of code");
             return;
         }
  
@@ -115,7 +115,8 @@ public class TowerManager extends GameManager {
      * @return true if it is suitable, false otherwise
      */
     private boolean canPlaceTower(int x, int y) {
-        //prevents placing towers outside of the 9x11 grid and at the first column
+        //prevents placing towers outside of the 9x11 grid and at the first 
+        //column
         if (x == 0 || y == 0 || y > Astar.ROWS) {
             Game.gameWindow.popUpText("Can't place a tower at the first column"
                     + " or outside of the grid");
@@ -173,10 +174,18 @@ public class TowerManager extends GameManager {
                     t.lastShot = now;
                     // creates a bullet that starts on the tower, follows the
                     // enemy and has the damage of the tower
-                    Bullets bullet = new Bullets(t.x, t.y, t.damage, closestEnemy, bulletSpeed);
+                    Bullets bullet = new Bullets(
+                            t.x, 
+                            t.y, 
+                            t.damage, 
+                            closestEnemy, 
+                            bulletSpeed
+                    );
                     // loads the image of the bullet
                     bullet.sprite = new JLabel(new ImageIcon(
-                            TowerManager.class.getResource("/images/java_logo.png")));
+                            TowerManager.class.getResource(
+                                    "/images/java_logo.png"
+                            )));
                     // gives the label the size of the image
                     bullet.sprite.setSize(bullet.sprite.getPreferredSize());
                     // adds the bullet to the array

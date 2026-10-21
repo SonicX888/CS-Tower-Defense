@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 public class Economy extends GameManager {
 
     // gold of the player at the start of the game
-    public static int gold = 30;
+    public static int gold = 170;
     // label that shows the gold on the window
     JLabel panel = new JLabel("Gold: " + gold);
 

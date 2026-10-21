@@ -29,7 +29,7 @@ public class TowerManager extends GameManager {
     // number of pixels a bullet moves at each update
     public int bulletSpeed = 11;
     // gold needed to build a tower
-    public int towerCost = 10;
+    public int towerCost = 50;
     // array where each tower is stored
     public static ArrayList<Tower> towerList = new ArrayList<>();
     // array where each bullet is stored

@@ -2237,7 +2237,7 @@ public class Game extends javax.swing.JFrame {
         row11.setPreferredSize(new java.awt.Dimension(704, 64));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Tower Cost: 10");
+        jLabel1.setText("Tower Cost: 50");
 
         javax.swing.GroupLayout row11Layout = new javax.swing.GroupLayout(row11);
         row11.setLayout(row11Layout);

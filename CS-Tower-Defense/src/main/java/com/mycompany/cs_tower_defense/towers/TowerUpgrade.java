@@ -42,7 +42,7 @@ public class TowerUpgrade extends JFrame {
  
         // cost of the next upgrade (starts at 10 gold and doubles at each
         // level)
-        int upgradeCost = 10 * (int) Math.pow(2, t.towerLevel);
+        int upgradeCost = 20 * (int) Math.pow(2, t.towerLevel);
  
         // creates the labels and the button of the frame
         JLabel level = new JLabel("Tower Level: " + t.towerLevel, SwingConstants.CENTER);

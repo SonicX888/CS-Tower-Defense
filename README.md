@@ -15,7 +15,7 @@ This game was made for the 2026 TU/e 2IP90 Challenge-Based Learning project.
 
 ## How to run:
 
-Launch the file `CS-Tower-Defense/src/main/java/com/mycompany/cs_tower_defense/Main.java`
+Run the file `CS-Tower-Defense/src/main/java/com/mycompany/cs_tower_defense/Main.java`
 
 ## Documents:
 

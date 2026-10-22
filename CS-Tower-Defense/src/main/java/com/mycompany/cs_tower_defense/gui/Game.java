@@ -1116,7 +1116,6 @@ public class Game extends javax.swing.JFrame {
         cell56.setBackground(new java.awt.Color(0, 0, 0));
         cell56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 62, 216), 2));
         cell56.setForeground(new java.awt.Color(0, 0, 0));
-        cell56.setToolTipText("");
         cell56.setPreferredSize(new java.awt.Dimension(64, 64));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nerd_face.png"))); // NOI18N
@@ -2237,23 +2236,23 @@ public class Game extends javax.swing.JFrame {
         row11.setPreferredSize(new java.awt.Dimension(704, 64));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Tower Cost: 50");
+        jLabel1.setText("Computer Cost: 50");
 
         javax.swing.GroupLayout row11Layout = new javax.swing.GroupLayout(row11);
         row11.setLayout(row11Layout);
         row11Layout.setHorizontalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, row11Layout.createSequentialGroup()
-                .addContainerGap(417, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(199, 199, 199))
+                .addContainerGap(418, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(145, 145, 145))
         );
         row11Layout.setVerticalGroup(
             row11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(row11Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         getContentPane().add(row11);

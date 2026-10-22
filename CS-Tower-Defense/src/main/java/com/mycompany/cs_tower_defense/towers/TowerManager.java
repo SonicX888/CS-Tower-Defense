@@ -118,22 +118,23 @@ public class TowerManager extends GameManager {
         //prevents placing towers outside of the 9x11 grid and at the first 
         //column
         if (x == 0 || y == 0 || y > Astar.ROWS) {
-            Game.gameWindow.popUpText("Can't place a tower at the first column"
+            Game.gameWindow.popUpText(
+                    "Can't place a computer at the first column"
                     + " or outside of the grid");
             return false;
         }
  
         //prevents placing tower on the end node
         if (x == Astar.GOAL_COLUMN && y == Astar.GOAL_ROW + 1) {
-            Game.gameWindow.popUpText("Can't place a tower at the end node");
+            Game.gameWindow.popUpText("Can't place a computer on yourself");
             return false;
         }
  
         //prevents placing tower over other towers
         for (Tower t : towerList) {
             if (t.x / Astar.CELL_SIZE == x && t.y / Astar.CELL_SIZE == y) {
-                Game.gameWindow.popUpText("Can't place a tower over "
-                        + "another tower");
+                Game.gameWindow.popUpText("Can't place a computer over "
+                        + "another computer");
                 return false;
             }
         }
